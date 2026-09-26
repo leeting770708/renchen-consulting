@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BRC 食品体系自查清单（选择题版）· 壬辰合规</title>
+<meta name="description" content="BRC 食品体系自查清单：逐条选择题自查，只需打勾或打叉，选完自动计分；填写工厂名称与邮箱即可把结果提交给壬辰合规。">
+<style>
+:root{--brand:#1A4D3E;--brand2:#2E7D5B;--line:#DCE5E1;--bg:#F6F8F7;--ink:#1F2A26;--gray:#6B7C75;
+--yes:#1A7F4B;--no:#B23A2E;--warn:#B8860B}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);
+font:15px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC",sans-serif;
+padding-bottom:96px}
+a{color:var(--brand2)}
+.wrap{max-width:980px;margin:0 auto;padding:0 16px}
+header.top{background:#fff;border-bottom:3px solid var(--brand)}
+.brandbar{display:flex;align-items:center;gap:12px;padding:14px 0 10px}
+.logo{width:38px;height:38px;border-radius:8px;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:17px;letter-spacing:.5px}
+.bname{font-size:17px;font-weight:700;color:var(--brand);letter-spacing:.5px}
+.bname small{display:block;font-size:10px;font-weight:400;color:var(--gray);letter-spacing:1.6px}
+.homelink{margin-left:auto;font-size:13px;color:var(--brand2);text-decoration:none;border:1px solid var(--line);border-radius:8px;padding:6px 11px;background:#fff;white-space:nowrap}
+.homelink:hover{border-color:var(--brand2)}
+h1{font-size:22px;margin:6px 0 4px;color:var(--brand)}
+.sub{color:var(--gray);font-size:13px;margin-bottom:14px}
+.card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:14px 0}
+.howto{font-size:13.5px;color:#33443E;background:#EEF4F1;border-left:4px solid var(--brand2)}
+.howto b{color:var(--brand)}
+.meta{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:13px;color:var(--gray);margin-top:8px}
+.meta i{font-style:normal;color:var(--ink);font-weight:600}
+h2.sec{font-size:16px;color:var(--brand);margin:26px 0 6px;padding-bottom:6px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+h2.sec small{font-size:12px;color:var(--gray);font-weight:400;white-space:nowrap}
+.q{background:#fff;border:1px solid var(--line);border-radius:10px;padding:11px 14px;margin:9px 0}
+.q.answered{border-color:#BFD8CC}
+.qhead{display:flex;gap:9px;align-items:flex-start}
+.no{min-width:34px;height:22px;line-height:22px;text-align:center;border-radius:5px;background:#EEF4F1;color:var(--brand);font-size:12px;font-weight:600;flex:none}
+.clause{min-width:56px;height:22px;line-height:22px;padding:0 6px;text-align:center;border-radius:5px;background:#F3F1E8;color:#6E5A18;font-size:11.5px;flex:none}
+.txt{flex:1;font-size:15px}
+.opts{display:flex;flex-wrap:wrap;gap:10px;margin:9px 0 0 43px}
+label.opt{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--line);border-radius:8px;padding:6px 12px;cursor:pointer;font-size:14px;background:#FCFDFC;user-select:none}
+label.opt input{appearance:none;-webkit-appearance:none;width:17px;height:17px;border:1.5px solid #9FB3AA;border-radius:4px;margin:0;position:relative;flex:none}
+label.opt input:checked{border-color:var(--brand);background:var(--brand)}
+label.opt input:checked::after{content:"✓";position:absolute;left:2px;top:-2px;color:#fff;font-size:13px;font-weight:700}
+label.opt.yes.on{border-color:var(--yes);background:#EDF7F1}
+label.opt.no.on{border-color:var(--no);background:#FBF0EE}
+label.opt.no input:checked{border-color:var(--no);background:var(--no)}
+label.opt.no input:checked::after{content:"×"}
+.bar{position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--line);box-shadow:0 -2px 10px rgba(0,0,0,.05)}
+.barin{max-width:980px;margin:0 auto;padding:10px 16px;display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;font-size:13.5px}
+.stat{color:var(--gray)}.stat b{color:var(--brand);font-size:16px}
+button{border:1px solid var(--line);background:#fff;border-radius:8px;padding:7px 14px;font-size:13.5px;cursor:pointer;color:var(--ink)}
+button.p{background:var(--brand);border-color:var(--brand);color:#fff;font-weight:600}
+button:hover{filter:brightness(.97)}
+button[disabled]{opacity:.6;cursor:default}
+.result{display:none}
+.result.show{display:block}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th,td{border:1px solid var(--line);padding:6px 8px;text-align:left}
+th{background:#EEF4F1;color:var(--brand)}
+td.n{text-align:right;white-space:nowrap}
+.weak{margin:8px 0;padding-left:0;list-style:none}
+.weak li{border-bottom:1px dashed var(--line);padding:5px 0;font-size:13.5px}
+.weak li em{font-style:normal;color:var(--no);font-weight:600;margin-right:6px}
+.weak li i{font-style:normal;color:var(--gray);margin-right:6px}
+.formcard label{display:block;margin:12px 0 0;font-size:14px;font-weight:600;color:#33443E}
+.formcard label span.req{color:var(--no);font-weight:700}
+.formcard input{display:block;width:100%;max-width:440px;margin-top:6px;border:1px solid var(--line);border-radius:8px;padding:9px 11px;font-size:14.5px;font-family:inherit;color:var(--ink);background:#fff;font-weight:400}
+.formcard input:focus{outline:none;border-color:var(--brand2);box-shadow:0 0 0 2px #DCEBE4}
+.fh{font-size:15.5px;font-weight:700;color:var(--brand)}
+.hint{font-size:12.5px;color:var(--gray);margin:4px 0 10px;line-height:1.75}
+.status{display:none;margin-top:12px;padding:11px 13px;border-radius:8px;font-size:14px;line-height:1.75}
+.status.show{display:block}
+.status .sm{display:block;font-size:12.5px;color:#4A5A54;margin-top:4px}
+.status.ok{background:#EDF7F1;border:1px solid #BFD8CC;color:#15603A}
+.status.err{background:#FBF0EE;border:1px solid #E6C6C1;color:#8E2E24}
+.status.wait{background:#F3F1E8;border:1px solid #E2DCC2;color:#6E5A18}
+.wm{position:fixed;right:-6px;bottom:74px;font-size:60px;font-weight:700;color:var(--brand);opacity:.045;
+letter-spacing:8px;pointer-events:none;user-select:none;z-index:0}
+footer.site{color:var(--gray);font-size:12.5px;text-align:center;padding:22px 0 10px;line-height:1.9}
+footer.site b{color:var(--brand)}
+.gap{height:8px}
+@media (max-width:640px){.txt{font-size:14.5px}.opts{margin-left:0}h1{font-size:19px}.homelink{font-size:12px;padding:5px 9px}}
+@media print{.bar,.noprint{display:none!important}body{background:#fff;padding-bottom:0}.q{break-inside:avoid}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <div class="brandbar">
+    <div class="logo">壬辰</div>
+    <div class="bname">壬辰合规<small>RENCHEN CONSULTING</small></div>
+    <a class="homelink" href="https://renchen-compliance.com/">返回首页 →</a>
+  </div>
+  <h1>BRC 食品体系自查清单</h1>
+  <div class="sub">BRCGS Food Safety Issue 9 · 满分 100 分（工厂自查用，勾选已具备项） · 逐条自查 · 每题只需打勾或打叉，选完自动计分</div>
+</div></header>
+
+<div class="wrap">
+  <div class="card howto">
+    <b>怎么用：</b>每道题只选一项 —— <b>已具备（打勾 ✓）</b> 或 <b>未具备（打叉 ✗）</b>；
+    全部选完后点底部「查看结果」，会给出 <b>得分（满分 100）</b>、各板块达成率与待整改的弱项清单。<br>
+    填写下方 <b>工厂名称</b> 与 <b>邮箱</b>，再点「提交自查结果」，我们会尽快与您联系。
+    作答先保存在本机浏览器；只有点提交时会上传工厂名称、邮箱、得分与未勾选条款号，其余内容不会上传。
+  </div>
+
+  <div class="card" id="meta"></div>
+
+  <div class="card formcard" id="formcard">
+    <div class="fh">提交前请填写（用于我们回访）</div>
+    <div class="hint">两项均为必填。邮箱只用于本次自查结果的沟通，不会用于其它用途。</div>
+    <label for="f_site">工厂名称 <span class="req">*</span>
+      <input id="f_site" name="site_name" type="text" required maxlength="120" autocomplete="organization" placeholder="例：苏州某某食品有限公司">
+    </label>
+    <label for="f_email">你的邮箱 <span class="req">*</span>
+      <input id="f_email" name="email" type="email" required maxlength="160" autocomplete="email" placeholder="例：qa@example.com">
+    </label>
+  </div>
+
+  <div id="questions"></div>
+
+  <div class="card result noprint" id="result"></div>
+
+  <div class="card noprint" id="submitbox">
+    <div class="fh">提交自查结果</div>
+    <div class="hint">提交内容：工厂名称、邮箱、得分、未勾选条款号（仅此四项，无其它数据）。提交后可关闭本页。</div>
+    <button class="p" id="btn_submit">提交自查结果</button>
+    <div class="status" id="sub_status"></div>
+  </div>
+
+  <footer class="site">
+    <b>壬辰合规 RENCHEN CONSULTING</b> · 国际标准体系认证辅导与专项培训<br>
+    电话 13616196518 · 邮箱 leeting770708@gmail.com<br>
+    <a href="https://renchen-compliance.com/">返回首页</a>
+  </footer>
+</div>
+
+<div class="wm noprint" aria-hidden="true">壬辰合规</div>
+
+<div class="bar"><div class="barin">
+  <span class="stat">已答 <b id="s_done">0</b>/<span id="s_total">0</span></span>
+  <span class="stat">得分 <b id="s_score">0</b>/<span id="s_full">100</span></span>
+  <span class="stat">达成率 <b id="s_pct">0%</b></span>
+  <span style="flex:1"></span>
+  <button class="p" id="btn_res">查看结果</button>
+  <button id="btn_submit2">提交自查结果</button>
+  <button id="btn_rst">重置</button>
+  <button id="btn_print">打印 / 存 PDF</button>
+</div></div>
+
+<script>
+/* ===== 题目数据（由 data/brc_food.json 原样内嵌，勿手改） ===== */
+const DATA = {
+ "classes": [
+  {
+   "id": "brc_food",
+   "group": "食品",
+   "title": "BRC 食品体系自查清单",
+   "subtitle": "BRCGS Food Safety Issue 9 · 满分 100 分（工厂自查用，勾选已具备项）",
+   "source_file": "checklists/brc_food.py",
+   "source_sha256_12": "033efe17f347",
+   "original_pdf_name": "BRC食品自查清单_工厂填写_v1.pdf",
+   "item_count": 94,
+   "total_score": 100.0,
+   "options": [
+    {
+     "value": "yes",
+     "label": "已具备（打勾 ✓）"
+    },
+    {
+     "value": "no",
+     "label": "未具备（打叉 ×）"
+    }
+   ],
+   "sections": [
+    {
+     "index": 1,
+     "title": "场所与设施（条款 4.1–4.16 / 7.1–7.4）",
+     "score": 60,
+     "items": [
+      {
+       "no": 1,
+       "clause": "4.1",
+       "text": "厂区周边无污染源、外部环境受控",
+       "score": 1
+      },
+      {
+       "no": 2,
+       "clause": "4.1",
+       "text": "厂区地面硬化、排水良好、外部照明",
+       "score": 0.5
+      },
+      {
+       "no": 3,
+       "clause": "4.2",
+       "text": "食品防护（Food Defence）评估与计划",
+       "score": 1.5
+      },
+      {
+       "no": 4,
+       "clause": "4.3",
+       "text": "厂区平面图（人流/物流/工艺流程）",
+       "score": 3
+      },
+      {
+       "no": 5,
+       "clause": "4.3",
+       "text": "布局防止交叉污染、区域有效隔离",
+       "score": 1.5
+      },
+      {
+       "no": 6,
+       "clause": "4.4",
+       "text": "墙壁/地面/天花板完好、易清洁",
+       "score": 2
+      },
+      {
+       "no": 7,
+       "clause": "4.4",
+       "text": "窗户/门/通风口密闭防护（防虫防尘）",
+       "score": 1.5
+      },
+      {
+       "no": 8,
+       "clause": "4.5",
+       "text": "水/蒸汽/压缩空气等公用设施（食品级处理）",
+       "score": 1.5
+      },
+      {
+       "no": 9,
+       "clause": "4.5",
+       "text": "照明充足、灯具带防护罩",
+       "score": 1
+      },
+      {
+       "no": 10,
+       "clause": "4.5",
+       "text": "通风与温湿度控制",
+       "score": 1
+      },
+      {
+       "no": 11,
+       "clause": "4.6",
+       "text": "设备设计/安装便于清洁与维护",
+       "score": 1
+      },
+      {
+       "no": 12,
+       "clause": "4.7",
+       "text": "设备维护计划与维护后清洁检查",
+       "score": 1
+      },
+      {
+       "no": 13,
+       "clause": "4.8",
+       "text": "更衣室（独立设置、无需经生产区）",
+       "score": 8
+      },
+      {
+       "no": 14,
+       "clause": "4.8",
+       "text": "洗手设施（水/皂/干手/消毒、标识）",
+       "score": 8
+      },
+      {
+       "no": 15,
+       "clause": "4.8",
+       "text": "卫生间（不直通生产区）",
+       "score": 6
+      },
+      {
+       "no": 16,
+       "clause": "4.8",
+       "text": "个人物品与防护服分开存放",
+       "score": 2
+      },
+      {
+       "no": 17,
+       "clause": "4.9",
+       "text": "玻璃/易碎品登记册与定期检查",
+       "score": 1
+      },
+      {
+       "no": 18,
+       "clause": "4.9",
+       "text": "利器控制（发放/回收/破损记录）",
+       "score": 1
+      },
+      {
+       "no": 19,
+       "clause": "4.9",
+       "text": "化学品管理（台账/MSDS/专柜存放）",
+       "score": 1
+      },
+      {
+       "no": 20,
+       "clause": "4.10",
+       "text": "异物检测设备（金属探测/X 光，如适用）",
+       "score": 1.5
+      },
+      {
+       "no": 21,
+       "clause": "4.11",
+       "text": "内务管理标准与清洁程序（含验证）",
+       "score": 1.5
+      },
+      {
+       "no": 22,
+       "clause": "4.11",
+       "text": "清洁工具与设备管理",
+       "score": 0.5
+      },
+      {
+       "no": 23,
+       "clause": "4.12",
+       "text": "废弃物分类、存放与持证承包商处置",
+       "score": 1
+      },
+      {
+       "no": 24,
+       "clause": "4.13",
+       "text": "剩余食品/副产物管理（如作饲料）",
+       "score": 1
+      },
+      {
+       "no": 25,
+       "clause": "4.14",
+       "text": "虫害管理方案与记录",
+       "score": 1.5
+      },
+      {
+       "no": 26,
+       "clause": "4.14",
+       "text": "诱饵站/灭蝇灯/防虫设施布局合理",
+       "score": 1
+      },
+      {
+       "no": 27,
+       "clause": "4.14",
+       "text": "虫害趋势分析与承包商管理",
+       "score": 0.5
+      },
+      {
+       "no": 28,
+       "clause": "4.15",
+       "text": "储存设施（分区、离地、温湿度控制）",
+       "score": 1.5
+      },
+      {
+       "no": 29,
+       "clause": "4.16",
+       "text": "发货与运输控制（车辆检查、温控）",
+       "score": 1.5
+      },
+      {
+       "no": 30,
+       "clause": "7.1",
+       "text": "人员培训计划与食品安全培训记录",
+       "score": 1.5
+      },
+      {
+       "no": 31,
+       "clause": "7.2",
+       "text": "个人卫生要求（手部/饰品/着装）",
+       "score": 1.5
+      },
+      {
+       "no": 32,
+       "clause": "7.3",
+       "text": "员工健康与医学筛查（健康证）",
+       "score": 1
+      },
+      {
+       "no": 33,
+       "clause": "7.4",
+       "text": "防护服管理程序（清洗/更换频率）",
+       "score": 1
+      }
+     ]
+    },
+    {
+     "index": 2,
+     "title": "食品安全计划（HACCP）与体系文件",
+     "score": 18,
+     "items": [
+      {
+       "no": 34,
+       "clause": "2.1",
+       "text": "HACCP 团队（多学科、组长、经培训）",
+       "score": 1
+      },
+      {
+       "no": 35,
+       "clause": "2.2",
+       "text": "前提方案（PRP）建立、实施与验证",
+       "score": 1
+      },
+      {
+       "no": 36,
+       "clause": "2.3",
+       "text": "产品描述（成分、理化、微生物特性）",
+       "score": 1
+      },
+      {
+       "no": 37,
+       "clause": "2.4",
+       "text": "预期用途与消费群体界定",
+       "score": 0.5
+      },
+      {
+       "no": 38,
+       "clause": "2.5",
+       "text": "工艺流程图（含现场验证）",
+       "score": 1.5
+      },
+      {
+       "no": 39,
+       "clause": "2.6",
+       "text": "流程图与现场实际核对",
+       "score": 0.5
+      },
+      {
+       "no": 40,
+       "clause": "2.7",
+       "text": "危害分析（生物/化学/物理/过敏原/欺诈）",
+       "score": 2
+      },
+      {
+       "no": 41,
+       "clause": "2.8",
+       "text": "CCP 确定（判定依据/决策树）",
+       "score": 1.5
+      },
+      {
+       "no": 42,
+       "clause": "2.9",
+       "text": "关键限值（可测量、经确认）",
+       "score": 1
+      },
+      {
+       "no": 43,
+       "clause": "2.10",
+       "text": "监控系统（方法/频率/责任人）",
+       "score": 1
+      },
+      {
+       "no": 44,
+       "clause": "2.11",
+       "text": "纠偏措施（含受影响产品处置）",
+       "score": 1
+      },
+      {
+       "no": 45,
+       "clause": "2.12",
+       "text": "HACCP 计划验证与持续确认",
+       "score": 1
+      },
+      {
+       "no": 46,
+       "clause": "2.13",
+       "text": "HACCP 文档与记录管理",
+       "score": 0.5
+      },
+      {
+       "no": 47,
+       "clause": "1.1",
+       "text": "食品安全与质量方针（签署/公示）",
+       "score": 0.5
+      },
+      {
+       "no": 48,
+       "clause": "1.1",
+       "text": "质量目标（可测量、监控、改进）",
+       "score": 0.5
+      },
+      {
+       "no": 49,
+       "clause": "1.2",
+       "text": "组织架构、职责与权限（含代理安排）",
+       "score": 0.5
+      },
+      {
+       "no": 50,
+       "clause": "3.1",
+       "text": "食品安全与质量管理手册",
+       "score": 0.5
+      },
+      {
+       "no": 51,
+       "clause": "3.2",
+       "text": "文件控制程序（现行版/作废管理）",
+       "score": 0.5
+      },
+      {
+       "no": 52,
+       "clause": "3.3",
+       "text": "记录填写与保存程序",
+       "score": 0.5
+      },
+      {
+       "no": 53,
+       "clause": "3.4",
+       "text": "内部审核程序（计划与频次）",
+       "score": 0.5
+      },
+      {
+       "no": 54,
+       "clause": "3.5",
+       "text": "供应商与原料批准及绩效监控程序",
+       "score": 0.5
+      },
+      {
+       "no": 55,
+       "clause": "3.6",
+       "text": "规格书管理（原料/包装/成品）",
+       "score": 0.5
+      }
+     ]
+    },
+    {
+     "index": 3,
+     "title": "记录清单",
+     "score": 8,
+     "items": [
+      {
+       "no": 56,
+       "clause": "1.1",
+       "text": "管理评审记录",
+       "score": 0.4
+      },
+      {
+       "no": 57,
+       "clause": "1.2",
+       "text": "内审记录（计划/检查表/报告/关闭）",
+       "score": 0.5
+      },
+      {
+       "no": 58,
+       "clause": "2.x",
+       "text": "HACCP 监控与验证记录",
+       "score": 0.5
+      },
+      {
+       "no": 59,
+       "clause": "3.5",
+       "text": "供应商评估记录与合格供应商清单",
+       "score": 0.4
+      },
+      {
+       "no": 60,
+       "clause": "3.7",
+       "text": "纠正预防措施（CAPA）记录",
+       "score": 0.4
+      },
+      {
+       "no": 61,
+       "clause": "3.8",
+       "text": "不合格品处置记录",
+       "score": 0.4
+      },
+      {
+       "no": 62,
+       "clause": "3.9",
+       "text": "追溯测试记录（每年至少一次）",
+       "score": 0.5
+      },
+      {
+       "no": 63,
+       "clause": "3.10",
+       "text": "投诉记录与趋势分析",
+       "score": 0.4
+      },
+      {
+       "no": 64,
+       "clause": "3.11",
+       "text": "召回/撤回演练记录（每年）",
+       "score": 0.5
+      },
+      {
+       "no": 65,
+       "clause": "4.8",
+       "text": "员工健康证/感染报告记录",
+       "score": 0.3
+      },
+      {
+       "no": 66,
+       "clause": "4.9",
+       "text": "玻璃/易碎品检查记录",
+       "score": 0.3
+      },
+      {
+       "no": 67,
+       "clause": "4.9",
+       "text": "利器发放/回收记录",
+       "score": 0.3
+      },
+      {
+       "no": 68,
+       "clause": "4.11",
+       "text": "清洁检查记录",
+       "score": 0.3
+      },
+      {
+       "no": 69,
+       "clause": "4.14",
+       "text": "虫害检查与趋势记录",
+       "score": 0.4
+      },
+      {
+       "no": 70,
+       "clause": "4.15",
+       "text": "储存温湿度记录",
+       "score": 0.4
+      },
+      {
+       "no": 71,
+       "clause": "5.6",
+       "text": "产品检验/实验室检测报告",
+       "score": 0.5
+      },
+      {
+       "no": 72,
+       "clause": "6.4",
+       "text": "校准记录与证书",
+       "score": 0.5
+      },
+      {
+       "no": 73,
+       "clause": "7.1",
+       "text": "培训记录（签到/考核/效果评估）",
+       "score": 0.5
+      },
+      {
+       "no": 74,
+       "clause": "4.12",
+       "text": "废弃物处置记录与合同",
+       "score": 0.3
+      },
+      {
+       "no": 75,
+       "clause": "4.1",
+       "text": "访客/车辆登记记录",
+       "score": 0.2
+      }
+     ]
+    },
+    {
+     "index": 4,
+     "title": "产品与流程控制",
+     "score": 10,
+     "items": [
+      {
+       "no": 76,
+       "clause": "5.1",
+       "text": "产品设计/开发程序（含变更控制）",
+       "score": 0.5
+      },
+      {
+       "no": 77,
+       "clause": "5.2",
+       "text": "标签审核（法规、过敏原、营养信息）",
+       "score": 1
+      },
+      {
+       "no": 78,
+       "clause": "5.3",
+       "text": "过敏原管理（隔离、清洁验证、标识）",
+       "score": 1
+      },
+      {
+       "no": 79,
+       "clause": "5.4",
+       "text": "产品真实性与声称（产销监管链）",
+       "score": 0.5
+      },
+      {
+       "no": 80,
+       "clause": "5.5",
+       "text": "包装材料合规（食品接触材料）",
+       "score": 1
+      },
+      {
+       "no": 81,
+       "clause": "5.6",
+       "text": "产品检验与实验室分析（周期）",
+       "score": 1.5
+      },
+      {
+       "no": 82,
+       "clause": "5.7",
+       "text": "产品放行程序（检验合格后放行）",
+       "score": 1
+      },
+      {
+       "no": 83,
+       "clause": "6.1",
+       "text": "过程控制（关键工序参数与记录）",
+       "score": 1.5
+      },
+      {
+       "no": 84,
+       "clause": "6.2",
+       "text": "标签与包装控制（数量/版本核对）",
+       "score": 1
+      },
+      {
+       "no": 85,
+       "clause": "6.4",
+       "text": "测量与监控设备校准控制",
+       "score": 1
+      }
+     ]
+    },
+    {
+     "index": 5,
+     "title": "计量校准",
+     "score": 2,
+     "items": [
+      {
+       "no": 86,
+       "clause": "6.4",
+       "text": "计量器具台账（覆盖全部在用设备）",
+       "score": 0.5
+      },
+      {
+       "no": 87,
+       "clause": "6.4",
+       "text": "校准计划与周期（可溯源至国家标准）",
+       "score": 0.5
+      },
+      {
+       "no": 88,
+       "clause": "6.4",
+       "text": "校准证书/报告（第三方机构）",
+       "score": 0.5
+      },
+      {
+       "no": 89,
+       "clause": "6.4",
+       "text": "校准状态标识与不合格设备处置",
+       "score": 0.5
+      }
+     ]
+    },
+    {
+     "index": 6,
+     "title": "检测与所需证书",
+     "score": 2,
+     "items": [
+      {
+       "no": 90,
+       "clause": "5.6",
+       "text": "成品第三方检测（微生物/理化）",
+       "score": 0.75
+      },
+      {
+       "no": 91,
+       "clause": "4.5",
+       "text": "水质检测（饮用水/工艺用水）",
+       "score": 0.5
+      },
+      {
+       "no": 92,
+       "clause": "4.5",
+       "text": "蒸汽/压缩空气检测（如适用）",
+       "score": 0.25
+      },
+      {
+       "no": 93,
+       "clause": "7.3",
+       "text": "员工健康证/体检报告",
+       "score": 0.25
+      },
+      {
+       "no": 94,
+       "clause": "—",
+       "text": "相关行政许可/资质（生产许可等）",
+       "score": 0.25
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "options": [
+  {
+   "value": "yes",
+   "label": "已具备（打勾 ✓）"
+  },
+  {
+   "value": "no",
+   "label": "未具备（打叉 ×）"
+  }
+ ]
+};
+const CLASS = DATA.classes[0];
+const OPTIONS = DATA.options;
+
+const SUBMIT_URL = 'https://n8n.auditedmakers.com/webhook/checklist-submit';
+const CATEGORY = 'food';   /* 本页对应的提交类别：food|packaging|cp|ab|sd */
+const STORE_KEY = 'rc_checklist_answers';   /* 与合集页共用同一份本地记录（按类 id 分组） */
+
+const state = JSON.parse(localStorage.getItem(STORE_KEY) || '{}');
+function save(){ localStorage.setItem(STORE_KEY, JSON.stringify(state)); }
+function bag(){ if(!state[CLASS.id]) state[CLASS.id] = {}; return state[CLASS.id]; }
+function esc(s){ return String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+
+function render(){
+  document.getElementById('meta').innerHTML =
+    `<div style="font-size:16px;font-weight:700;color:var(--brand)">${esc(CLASS.title)}</div>
+     <div style="color:var(--gray);font-size:13px;margin-top:2px">${esc(CLASS.subtitle)}</div>
+     <div class="meta"><span>题数 <i>${CLASS.item_count}</i></span><span>满分 <i>${CLASS.total_score}</i></span>
+     <span>板块 <i>${CLASS.sections.length}</i></span><span>每题两项：<i>${OPTIONS.map(o=>esc(o.label)).join(' / ')}</i></span></div>`;
+
+  const a = bag();
+  document.getElementById('questions').innerHTML = CLASS.sections.map(sec =>
+    `<h2 class="sec"><span>${esc(sec.title)}</span><small>本板块 ${sec.items.length} 题 · ${sec.score} 分</small></h2>` +
+    sec.items.map(it => `
+      <div class="q" id="q_${CLASS.id}_${it.no}">
+        <div class="qhead">
+          <span class="no">${it.no}</span>
+          <span class="clause">${esc(it.clause)}</span>
+          <span class="txt">${esc(it.text)}</span>
+        </div>
+        <div class="opts" data-no="${it.no}">
+          ${OPTIONS.map(o => `<label class="opt ${o.value === 'yes' ? 'yes' : 'no'}" data-v="${o.value}">
+             <input type="radio" name="q${it.no}" value="${o.value}" ${a[it.no] === o.value ? 'checked' : ''}>
+             ${esc(o.label)}</label>`).join('')}
+        </div>
+      </div>`).join('')
+  ).join('');
+
+  document.querySelectorAll('.opts').forEach(box => {
+    const no = box.dataset.no;
+    const mark = () => {
+      box.querySelectorAll('label.opt').forEach(l =>
+        l.classList.toggle('on', l.querySelector('input').checked));
+      document.getElementById(`q_${CLASS.id}_${no}`).classList.toggle('answered', !!a[no]);
+    };
+    box.querySelectorAll('input').forEach(inp => inp.onchange = () => { a[no] = inp.value; save(); mark(); stats(); });
+    mark();
+  });
+  stats();
+}
+
+function stats(){
+  const a = bag();
+  let done = 0, score = 0;
+  CLASS.sections.forEach(s => s.items.forEach(it => {
+    if(a[it.no]){ done++; if(a[it.no] === 'yes') score += it.score; }
+  }));
+  const pct = CLASS.total_score ? Math.round(score / CLASS.total_score * 100) : 0;
+  document.getElementById('s_done').textContent = done;
+  document.getElementById('s_total').textContent = CLASS.item_count;
+  document.getElementById('s_score').textContent = (+score.toFixed(2));
+  document.getElementById('s_full').textContent = CLASS.total_score;
+  document.getElementById('s_pct').textContent = pct + '%';
+}
+
+function result(){
+  const a = bag();
+  let score = 0, done = 0;
+  const rows = CLASS.sections.map(s => {
+    let sd = 0, ss = 0;
+    s.items.forEach(it => { if(a[it.no]){ done++; if(a[it.no] === 'yes'){ ss += it.score; } } sd++; });
+    score += ss;
+    const rate = s.score ? Math.round(ss / s.score * 100) : 0;
+    return `<tr><td>${esc(s.title)}</td><td class="n">${sd}/${s.items.length}</td>
+            <td class="n">${+ss.toFixed(2)}/${s.score}</td><td class="n">${rate}%</td></tr>`;
+  }).join('');
+  const weak = [];
+  CLASS.sections.forEach(s => s.items.forEach(it => { if(a[it.no] === 'no') weak.push([it, s.title]); }));
+  const pct = CLASS.total_score ? Math.round(score / CLASS.total_score * 100) : 0;
+  const el = document.getElementById('result');
+  el.innerHTML =
+   `<div style="font-size:16px;font-weight:700;color:var(--brand)">自查结果 · ${esc(CLASS.title)}</div>
+    <div style="margin:6px 0 12px;font-size:14px">已答 <b>${done}/${CLASS.item_count}</b> 题 ·
+      得分 <b style="color:var(--brand);font-size:19px">${+score.toFixed(2)}</b>/100 ·
+      达成率 <b>${pct}%</b>${done < CLASS.item_count ? ` · <span style="color:var(--warn)">尚有 ${CLASS.item_count - done} 题未答</span>` : ''}</div>
+    <table><tr><th>板块</th><th class="n">已答/题数</th><th class="n">得分/满分</th><th class="n">达成率</th></tr>${rows}</table>
+    <div style="margin-top:14px;font-weight:700;color:var(--brand)">待整改弱项（选了「未具备」的 ${weak.length} 条，按分值从高到低）</div>
+    ${weak.length ? `<ul class="weak">${weak.sort((x,y)=>y[0].score-x[0].score).map(([it,s]) =>
+        `<li><em>${it.no}.</em><i>[${esc(it.clause)} · ${it.score} 分]</i>${esc(it.text)} <i style="color:#98A8A1">— ${esc(s)}</i></li>`).join('')}</ul>`
+      : `<div style="color:var(--gray);font-size:13.5px;margin-top:6px">暂无（未选择「未具备」，或还没开始作答）。</div>`}
+    <div style="margin-top:12px;font-size:12.5px;color:var(--gray)">填好上方的工厂名称与邮箱后，点下方「提交自查结果」即可把得分与未勾选条款号发给我们。</div>`;
+  el.classList.add('show');
+  el.scrollIntoView({behavior:'smooth', block:'start'});
+}
+
+/* ===== 提交自查结果 ===== */
+function setStatus(kind, msg, view){
+  const el = document.getElementById('sub_status');
+  el.className = 'status show ' + kind;
+  el.innerHTML = msg;
+  if(view === 'form') document.getElementById('formcard').scrollIntoView({behavior:'smooth', block:'center'});
+  else if(view === 'box') document.getElementById('submitbox').scrollIntoView({behavior:'smooth', block:'center'});
+}
+
+function summarize(){
+  const a = bag();
+  let answered = 0, checked = 0, score = 0, total = 0;
+  const unchecked = [];
+  CLASS.sections.forEach(s => s.items.forEach(it => {
+    total++;
+    const v = a[it.no];
+    if(v){ answered++; if(v === 'yes'){ checked++; score += it.score; } }
+    if(v !== 'yes') unchecked.push(String(it.clause));   /* 未勾选「已具备」的条款号 */
+  }));
+  return {answered, checked, total, unchecked, score: +score.toFixed(2)};
+}
+
+async function submit(){
+  const btn = document.getElementById('btn_submit');
+  const site = (document.getElementById('f_site').value || '').trim();
+  const email = (document.getElementById('f_email').value || '').trim();
+
+  if(!site){ setStatus('err', '⚠️ 请先填写「工厂名称」。', 'form'); document.getElementById('f_site').focus(); return; }
+  if(!email){ setStatus('err', '⚠️ 请先填写「你的邮箱」。', 'form'); document.getElementById('f_email').focus(); return; }
+  if(!/^[^\s@]+@[^\s@]+\.[A-Za-z]{2,}$/.test(email)){
+    setStatus('err', '⚠️ 邮箱格式不正确，请检查后重试（例：qa@example.com）。', 'form');
+    document.getElementById('f_email').focus(); return; }
+
+  const sm = summarize();
+  if(sm.answered < 1){ setStatus('err', '⚠️ 请先在下面至少勾选一题的「已具备 / 未具备」，再提交。', 'form'); return; }
+
+  const payload = {
+    site_name: site,
+    email: email,
+    category: CATEGORY,
+    score: sm.score,
+    total: 100,
+    unchecked: sm.unchecked,
+    checked_count: sm.checked,
+    total_count: sm.total,
+    submitted_at: new Date().toISOString()
+  };
+
+  btn.disabled = true;
+  setStatus('wait', '正在提交，请稍候…', 'box');
+  try{
+    const resp = await fetch(SUBMIT_URL, {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(payload)
+    });
+    let j = null;
+    try{ j = await resp.json(); }catch(e){ j = null; }
+    if(!resp.ok || !j || j.ok !== true){
+      throw new Error('服务端返回 HTTP ' + resp.status + (j && j.message ? ' · ' + j.message : ''));
+    }
+    setStatus('ok',
+      '✅ 已提交，我们会尽快与您联系。<span class="sm">本次得分 <b>' + sm.score + '</b>/100 · ' +
+      '已勾选「已具备」' + sm.checked + '/' + sm.total + ' 题 · 未勾选条款号已一并发送（共 ' + sm.unchecked.length + ' 条）。' +
+      '如需修改答案，改完再点一次「提交自查结果」即可覆盖更新。</span>', 'box');
+  }catch(err){
+    setStatus('err',
+      '❌ 提交失败：' + esc(err && err.message ? err.message : '网络异常') +
+      '<span class="sm">您填写的内容和作答都还保留在本页，可直接再点「提交自查结果」重试；' +
+      '若多次失败，请把本页结果截图或存 PDF 后发到 leeting770708@gmail.com。</span>', 'box');
+  }finally{
+    btn.disabled = false;
+  }
+}
+
+render();
+document.getElementById('btn_res').onclick = result;
+document.getElementById('btn_print').onclick = () => window.print();
+document.getElementById('btn_submit').onclick = submit;
+document.getElementById('btn_submit2').onclick = submit;
+document.getElementById('btn_rst').onclick = () => {
+  if(confirm('确定清空【' + CLASS.title + '】已选答案？')){ state[CLASS.id] = {}; save(); render(); }
+};
+</script>
+<div style="text-align:center;color:#888;font-size:12px;padding:16px 0;line-height:1.7">本自查清单由壬辰合规整理，供工厂内部自查参考；正式要求以 BRCGS 官方标准为准。如需过证辅导请联系 liting@renchen-compliance.com。</div>
+</body>
+</html>

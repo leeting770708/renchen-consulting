@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BRC 经纪商（A&amp;B）体系自查清单（选择题版）· 壬辰合规</title>
+<meta name="description" content="BRC 经纪商（A&amp;B）体系自查清单：逐条选择题自查，只需打勾或打叉，选完自动计分；填写工厂名称与邮箱即可把结果提交给壬辰合规。">
+<style>
+:root{--brand:#1A4D3E;--brand2:#2E7D5B;--line:#DCE5E1;--bg:#F6F8F7;--ink:#1F2A26;--gray:#6B7C75;
+--yes:#1A7F4B;--no:#B23A2E;--warn:#B8860B}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);
+font:15px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC",sans-serif;
+padding-bottom:96px}
+a{color:var(--brand2)}
+.wrap{max-width:980px;margin:0 auto;padding:0 16px}
+header.top{background:#fff;border-bottom:3px solid var(--brand)}
+.brandbar{display:flex;align-items:center;gap:12px;padding:14px 0 10px}
+.logo{width:38px;height:38px;border-radius:8px;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:17px;letter-spacing:.5px}
+.bname{font-size:17px;font-weight:700;color:var(--brand);letter-spacing:.5px}
+.bname small{display:block;font-size:10px;font-weight:400;color:var(--gray);letter-spacing:1.6px}
+.homelink{margin-left:auto;font-size:13px;color:var(--brand2);text-decoration:none;border:1px solid var(--line);border-radius:8px;padding:6px 11px;background:#fff;white-space:nowrap}
+.homelink:hover{border-color:var(--brand2)}
+h1{font-size:22px;margin:6px 0 4px;color:var(--brand)}
+.sub{color:var(--gray);font-size:13px;margin-bottom:14px}
+.card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:14px 0}
+.howto{font-size:13.5px;color:#33443E;background:#EEF4F1;border-left:4px solid var(--brand2)}
+.howto b{color:var(--brand)}
+.meta{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:13px;color:var(--gray);margin-top:8px}
+.meta i{font-style:normal;color:var(--ink);font-weight:600}
+h2.sec{font-size:16px;color:var(--brand);margin:26px 0 6px;padding-bottom:6px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+h2.sec small{font-size:12px;color:var(--gray);font-weight:400;white-space:nowrap}
+.q{background:#fff;border:1px solid var(--line);border-radius:10px;padding:11px 14px;margin:9px 0}
+.q.answered{border-color:#BFD8CC}
+.qhead{display:flex;gap:9px;align-items:flex-start}
+.no{min-width:34px;height:22px;line-height:22px;text-align:center;border-radius:5px;background:#EEF4F1;color:var(--brand);font-size:12px;font-weight:600;flex:none}
+.clause{min-width:56px;height:22px;line-height:22px;padding:0 6px;text-align:center;border-radius:5px;background:#F3F1E8;color:#6E5A18;font-size:11.5px;flex:none}
+.txt{flex:1;font-size:15px}
+.opts{display:flex;flex-wrap:wrap;gap:10px;margin:9px 0 0 43px}
+label.opt{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--line);border-radius:8px;padding:6px 12px;cursor:pointer;font-size:14px;background:#FCFDFC;user-select:none}
+label.opt input{appearance:none;-webkit-appearance:none;width:17px;height:17px;border:1.5px solid #9FB3AA;border-radius:4px;margin:0;position:relative;flex:none}
+label.opt input:checked{border-color:var(--brand);background:var(--brand)}
+label.opt input:checked::after{content:"✓";position:absolute;left:2px;top:-2px;color:#fff;font-size:13px;font-weight:700}
+label.opt.yes.on{border-color:var(--yes);background:#EDF7F1}
+label.opt.no.on{border-color:var(--no);background:#FBF0EE}
+label.opt.no input:checked{border-color:var(--no);background:var(--no)}
+label.opt.no input:checked::after{content:"×"}
+.bar{position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--line);box-shadow:0 -2px 10px rgba(0,0,0,.05)}
+.barin{max-width:980px;margin:0 auto;padding:10px 16px;display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;font-size:13.5px}
+.stat{color:var(--gray)}.stat b{color:var(--brand);font-size:16px}
+button{border:1px solid var(--line);background:#fff;border-radius:8px;padding:7px 14px;font-size:13.5px;cursor:pointer;color:var(--ink)}
+button.p{background:var(--brand);border-color:var(--brand);color:#fff;font-weight:600}
+button:hover{filter:brightness(.97)}
+button[disabled]{opacity:.6;cursor:default}
+.result{display:none}
+.result.show{display:block}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th,td{border:1px solid var(--line);padding:6px 8px;text-align:left}
+th{background:#EEF4F1;color:var(--brand)}
+td.n{text-align:right;white-space:nowrap}
+.weak{margin:8px 0;padding-left:0;list-style:none}
+.weak li{border-bottom:1px dashed var(--line);padding:5px 0;font-size:13.5px}
+.weak li em{font-style:normal;color:var(--no);font-weight:600;margin-right:6px}
+.weak li i{font-style:normal;color:var(--gray);margin-right:6px}
+.formcard label{display:block;margin:12px 0 0;font-size:14px;font-weight:600;color:#33443E}
+.formcard label span.req{color:var(--no);font-weight:700}
+.formcard input{display:block;width:100%;max-width:440px;margin-top:6px;border:1px solid var(--line);border-radius:8px;padding:9px 11px;font-size:14.5px;font-family:inherit;color:var(--ink);background:#fff;font-weight:400}
+.formcard input:focus{outline:none;border-color:var(--brand2);box-shadow:0 0 0 2px #DCEBE4}
+.fh{font-size:15.5px;font-weight:700;color:var(--brand)}
+.hint{font-size:12.5px;color:var(--gray);margin:4px 0 10px;line-height:1.75}
+.status{display:none;margin-top:12px;padding:11px 13px;border-radius:8px;font-size:14px;line-height:1.75}
+.status.show{display:block}
+.status .sm{display:block;font-size:12.5px;color:#4A5A54;margin-top:4px}
+.status.ok{background:#EDF7F1;border:1px solid #BFD8CC;color:#15603A}
+.status.err{background:#FBF0EE;border:1px solid #E6C6C1;color:#8E2E24}
+.status.wait{background:#F3F1E8;border:1px solid #E2DCC2;color:#6E5A18}
+.wm{position:fixed;right:-6px;bottom:74px;font-size:60px;font-weight:700;color:var(--brand);opacity:.045;
+letter-spacing:8px;pointer-events:none;user-select:none;z-index:0}
+footer.site{color:var(--gray);font-size:12.5px;text-align:center;padding:22px 0 10px;line-height:1.9}
+footer.site b{color:var(--brand)}
+.gap{height:8px}
+@media (max-width:640px){.txt{font-size:14.5px}.opts{margin-left:0}h1{font-size:19px}.homelink{font-size:12px;padding:5px 9px}}
+@media print{.bar,.noprint{display:none!important}body{background:#fff;padding-bottom:0}.q{break-inside:avoid}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <div class="brandbar">
+    <div class="logo">壬辰</div>
+    <div class="bname">壬辰合规<small>RENCHEN CONSULTING</small></div>
+    <a class="homelink" href="https://renchen-compliance.com/">返回首页 →</a>
+  </div>
+  <h1>BRC 经纪商（A&amp;B）体系自查清单</h1>
+  <div class="sub">BRCGS Agents &amp; Brokers Global Standard Issue 3（代理商和经纪商全球标准·第 3 版）· 满分 100 分（勾选已具备项） · 逐条自查 · 每题只需打勾或打叉，选完自动计分</div>
+</div></header>
+
+<div class="wrap">
+  <div class="card howto">
+    <b>怎么用：</b>每道题只选一项 —— <b>已具备（打勾 ✓）</b> 或 <b>未具备（打叉 ✗）</b>；
+    全部选完后点底部「查看结果」，会给出 <b>得分（满分 100）</b>、各板块达成率与待整改的弱项清单。<br>
+    填写下方 <b>工厂名称</b> 与 <b>邮箱</b>，再点「提交自查结果」，我们会尽快与您联系。
+    作答先保存在本机浏览器；只有点提交时会上传工厂名称、邮箱、得分与未勾选条款号，其余内容不会上传。
+  </div>
+
+  <div class="card" id="meta"></div>
+
+  <div class="card formcard" id="formcard">
+    <div class="fh">提交前请填写（用于我们回访）</div>
+    <div class="hint">两项均为必填。邮箱只用于本次自查结果的沟通，不会用于其它用途。</div>
+    <label for="f_site">工厂名称 <span class="req">*</span>
+      <input id="f_site" name="site_name" type="text" required maxlength="120" autocomplete="organization" placeholder="例：苏州某某食品有限公司">
+    </label>
+    <label for="f_email">你的邮箱 <span class="req">*</span>
+      <input id="f_email" name="email" type="email" required maxlength="160" autocomplete="email" placeholder="例：qa@example.com">
+    </label>
+  </div>
+
+  <div id="questions"></div>
+
+  <div class="card result noprint" id="result"></div>
+
+  <div class="card noprint" id="submitbox">
+    <div class="fh">提交自查结果</div>
+    <div class="hint">提交内容：工厂名称、邮箱、得分、未勾选条款号（仅此四项，无其它数据）。提交后可关闭本页。</div>
+    <button class="p" id="btn_submit">提交自查结果</button>
+    <div class="status" id="sub_status"></div>
+  </div>
+
+  <footer class="site">
+    <b>壬辰合规 RENCHEN CONSULTING</b> · 国际标准体系认证辅导与专项培训<br>
+    电话 13616196518 · 邮箱 leeting770708@gmail.com<br>
+    <a href="https://renchen-compliance.com/">返回首页</a>
+  </footer>
+</div>
+
+<div class="wm noprint" aria-hidden="true">壬辰合规</div>
+
+<div class="bar"><div class="barin">
+  <span class="stat">已答 <b id="s_done">0</b>/<span id="s_total">0</span></span>
+  <span class="stat">得分 <b id="s_score">0</b>/<span id="s_full">100</span></span>
+  <span class="stat">达成率 <b id="s_pct">0%</b></span>
+  <span style="flex:1"></span>
+  <button class="p" id="btn_res">查看结果</button>
+  <button id="btn_submit2">提交自查结果</button>
+  <button id="btn_rst">重置</button>
+  <button id="btn_print">打印 / 存 PDF</button>
+</div></div>
+
+<script>
+/* ===== 题目数据（由 data/brc_ab.json 原样内嵌，勿手改） ===== */
+const DATA = {
+ "classes": [
+  {
+   "id": "brc_ab",
+   "group": "经纪商",
+   "title": "BRC 经纪商（A&B）体系自查清单",
+   "subtitle": "BRCGS Agents & Brokers Global Standard Issue 3（代理商和经纪商全球标准·第 3 版）· 满分 100 分（勾选已具备项）",
+   "source_file": "checklists/brc_ab.py",
+   "source_sha256_12": "85a1cdff8bef",
+   "original_pdf_name": "BRC经纪商自查清单_工厂填写_v1.pdf",
+   "item_count": 96,
+   "total_score": 100.0,
+   "options": [
+    {
+     "value": "yes",
+     "label": "已具备（打勾 ✓）"
+    },
+    {
+     "value": "no",
+     "label": "未具备（打叉 ×）"
+    }
+   ],
+   "sections": [
+    {
+     "index": 1,
+     "title": "1 高级管理层承诺（条款 1.1–1.2）",
+     "score": 15.2,
+     "items": [
+      {
+       "no": 1,
+       "clause": "1.1.1",
+       "text": "制定成文的产品安全与质量方针，阐明供应安全、合法、真实产品并保障产品质量特性、履行对客户的责任约定；方针由总负责人签署并向全体员工传达。",
+       "score": 1.6
+      },
+      {
+       "no": 2,
+       "clause": "1.1.2",
+       "text": "高级管理层制定并维护产品安全和质量文化的不断提升计划，含供应链与内部沟通、培训、员工反馈、产品安全与质量相关活动绩效衡量等业务活动，并有行动计划、时间表及已完成活动有效性评估。",
+       "score": 0.8
+      },
+      {
+       "no": 3,
+       "clause": "1.1.3",
+       "text": "建立维护和改善服务的明确目标（确保产品安全性、真实性、合法性和质量），目标成文、向相关员工传达、受监控，且至少每 6 个月向高级管理层报告一次结果。",
+       "score": 1.6
+      },
+      {
+       "no": 4,
+       "clause": "1.1.4",
+       "text": "按至少每年一次的时间间隔召开高级管理层管理评审会议，审查本标准及 1.1.3 目标的执行情况；评审含上次行动计划、内外部审核结果、客户投诉与业绩审查、突发事件与不合格、供应商绩效、危害与风险评估、食品防护与产品真实性系统、资源要求；记录会议并落实商定措施。",
+       "score": 1.6
+      },
+      {
+       "no": 5,
+       "clause": "1.1.5",
+       "text": "建立行之有效的系统，确保产品安全性、真实性、合法性和质量的关键问题能及时得到高级管理层关注并解决。",
+       "score": 0.8
+      },
+      {
+       "no": 6,
+       "clause": "1.1.6",
+       "text": "高级管理层依据本标准及客户要求，提供确保所供应产品安全性、真实性、合法性和特定品质所需的资源。",
+       "score": 0.8
+      },
+      {
+       "no": 7,
+       "clause": "1.1.7",
+       "text": "建立体系确保公司及时了解并审查新出现的产品安全、真实性、质量或合法性问题、行业规范准则及产品拟销售或使用国家/地区的适用法律。",
+       "score": 0.8
+      },
+      {
+       "no": 8,
+       "clause": "1.1.8",
+       "text": "在有法律要求的情况下，在相应主管部门进行登记并获得有关批准。",
+       "score": 0.8
+      },
+      {
+       "no": 9,
+       "clause": "1.1.9",
+       "text": "备有本标准原版最新纸质或电子版本，并及时了解 BRCGS 网站上发布的有关标准条款或协议的任何内容更新。",
+       "score": 0.8
+      },
+      {
+       "no": 10,
+       "clause": "1.1.10",
+       "text": "已取得本标准认证的公司，确保在证书指定的审核到期日或之前进行重新认证的通知审核。",
+       "score": 0.8
+      },
+      {
+       "no": 11,
+       "clause": "1.1.11",
+       "text": "一名高级经理参加本标准认证审核的首次会议和总结会；最高级别经理缺席时指定代理人参加。",
+       "score": 0.8
+      },
+      {
+       "no": 12,
+       "clause": "1.1.12",
+       "text": "高级管理层确保上一次审核发现的不符合项的根本原因已得到有效解决，避免同类事件再次发生。",
+       "score": 1.6
+      },
+      {
+       "no": 13,
+       "clause": "1.1.13",
+       "text": "仅按本标准审核协议部分（第 III 章 6.1 节）规定的使用条件使用 BRCGS 徽标和转述认证状态。",
+       "score": 0.8
+      },
+      {
+       "no": 14,
+       "clause": "1.2.1",
+       "text": "设置体现管理结构的组织架构图，明确划分各项管理职责；以书面形式明确负责人缺席时由谁代表行使职权。",
+       "score": 0.8
+      },
+      {
+       "no": 15,
+       "clause": "1.2.2",
+       "text": "确保全体员工明确知悉自己的职责；其职责或活动可能影响产品安全性、真实性、合法性或质量的员工能参考已制定的成文工作指南或规程并据此有效开展工作。",
+       "score": 0.8
+      }
+     ]
+    },
+    {
+     "index": 2,
+     "title": "2 危害和风险评估（条款 2.1–2.11）",
+     "score": 14.4,
+     "items": [
+      {
+       "no": 16,
+       "clause": "2.1",
+       "text": "负责领导危害分析的员工能证明其对危害和风险分析原则（如 HACCP 原则）及实际应用的理解和运用能力；团队负责时全体成员应了解相关原则；内部缺乏专业知识时可寻求外部技术力量，但产品安全体系的日常管理始终是公司自己的责任。",
+       "score": 1.6
+      },
+      {
+       "no": 17,
+       "clause": "2.2",
+       "text": "由企业总部负责危害与风险分析研究时，体系经验证行之有效，即适用本地运营并满足本地业务需要。",
+       "score": 0.8
+      },
+      {
+       "no": 18,
+       "clause": "2.3",
+       "text": "危害分析及由此制定的规程得到高级管理层的承诺和支持，并通过公司成文的产品安全和质量管理体系予以实施。",
+       "score": 0.8
+      },
+      {
+       "no": 19,
+       "clause": "2.4",
+       "text": "根据涉及的产品和服务界定危害和风险分析的范围：所交易产品本质的描述、特定储存或处理条件（如温度控制、易受潮水损）、公司直接提供或间接安排服务的描述说明。",
+       "score": 0.8
+      },
+      {
+       "no": 20,
+       "clause": "2.5",
+       "text": "制定涵盖从采购或承接产品直到客户接受产品全过程每一步骤的流程图，适用时包含进出口流程、产品检查或测试、分包运输或分销、分包储存、损坏或退回产品处理、分包业务（如重新贴标签或进一步加工）。",
+       "score": 1.6
+      },
+      {
+       "no": 21,
+       "clause": "2.6",
+       "text": "识别并记录与流程图每一步骤相关的所有潜在危害，考虑微生物生长、物理污染、化学或放射性污染（含异味）、物理损坏、欺诈（以次充好或故意掺假）、蓄意污染、过敏原交叉污染、影响包装材料功能完好性的危害、客户或监管机构规定的其他危害。",
+       "score": 2.4
+      },
+      {
+       "no": 22,
+       "clause": "2.7",
+       "text": "完成对潜在危害的成文风险分析以确定需要控制的危害，考虑危害出现的可能性、危害的严重性及有效预防或降低危害的现有前提方案。",
+       "score": 1.6
+      },
+      {
+       "no": 23,
+       "clause": "2.8",
+       "text": "对每一种需要控制的危害建立相应流程，确保服务提供商有效管理其运营以预防、消除显著危害或将其降到可接受限度（如与服务提供商制定的规范和合同、审查其 HACCP 或风险管理计划）。",
+       "score": 0.8
+      },
+      {
+       "no": 24,
+       "clause": "2.8.1",
+       "text": "危害控制落实在服务提供商的 HACCP 或危害和风险管理计划时，由能胜任人员审查整个计划和控制措施的有效性，或确认包含在其受认可的认证范围内；合同确保服务提供商在重大变更施行前知会公司并经审查确认持续有效性，保留审查记录。",
+       "score": 0.8
+      },
+      {
+       "no": 25,
+       "clause": "2.9",
+       "text": "建立有效的流程，监控和验证服务提供商运营的流程能有效控制已识别的危害。",
+       "score": 0.8
+      },
+      {
+       "no": 26,
+       "clause": "2.10",
+       "text": "针对发现控制措施失效或结果表明产品或服务不符合规范等情形制定纠正措施。",
+       "score": 0.8
+      },
+      {
+       "no": 27,
+       "clause": "2.11",
+       "text": "至少每年一次正式审查危害与风险分析，并在出现新产品类型、引入新服务或流程步骤、出现新风险、发生产品召回后流程调整时进行复核；变动纳入危害与风险评估及产品安全和质量管理体系，并反映在政策与目标中。",
+       "score": 1.6
+      }
+     ]
+    },
+    {
+     "index": 3,
+     "title": "3 产品安全与质量管理体系（条款 3.1–3.11）",
+     "score": 33.6,
+     "items": [
+      {
+       "no": 28,
+       "clause": "3.1.1",
+       "text": "公司规程、工作方法和规范集结成印刷文册或电子文本的产品安全和质量手册，便于员工浏览且易于访问查阅，并考虑翻译成相应语言的必要性。",
+       "score": 0.8
+      },
+      {
+       "no": 29,
+       "clause": "3.1.2",
+       "text": "产品安全与质量手册得到全面贯彻和落实，手册或相关文件方便员工随时取用。",
+       "score": 0.8
+      },
+      {
+       "no": 30,
+       "clause": "3.1.3",
+       "text": "所有的规程和工作指导均清晰易读、内容明确、以相关语言书写且描述详尽，以保证相关员工的正确运用。",
+       "score": 0.8
+      },
+      {
+       "no": 31,
+       "clause": "3.2.1",
+       "text": "制定构成质量体系的文件管理规程，包括控制文件一览表（含最新版本编号）、控制文件的识别和授权方法、文件改动或修改的理由记录、确保文件保存完好且易于检索的方法、文件更新时替换现有文件的制度，以及存档文件的确定保存期限；电子存档文件安全存储（授权查看、修改控制或密码保护）并适当备份。",
+       "score": 1.6
+      },
+      {
+       "no": 32,
+       "clause": "3.3.1",
+       "text": "记录清晰、以良好条件保存且可检索；对记录的所有修改均通过授权进行并记录修改的合理性；电子存档记录适当备份以防丢失。",
+       "score": 0.8
+      },
+      {
+       "no": 33,
+       "clause": "3.3.2",
+       "text": "记录保存确定的期限，考虑法规与客户要求、产品的有效期或包装材料的使用等；记录安全储存（限授权人员访问）且能快速有效地提取查阅。",
+       "score": 0.8
+      },
+      {
+       "no": 34,
+       "clause": "3.3.3",
+       "text": "当记录由第三方保存时，公司通常应能在 1 个工作日内获得记录的副本。",
+       "score": 0.8
+      },
+      {
+       "no": 35,
+       "clause": "3.4.1",
+       "text": "建立体系识别客户是否有特定要求；如有特定要求，告知公司相关人员并及时更新。",
+       "score": 0.8
+      },
+      {
+       "no": 36,
+       "clause": "3.4.2",
+       "text": "当制造、加工或包装工厂需要施行特定客户政策时，具备有效流程将这类要求传达给相关的产品和服务提供商（如产品规格、合同或行为准则），并提供记录证明已传达且供应商已理解并实施要求。",
+       "score": 0.8
+      },
+      {
+       "no": 37,
+       "clause": "3.4.3",
+       "text": "客户提出要求时，提供信息协助客户审核批准产品的最终制造商或加工商，其中包括该制造商或加工商的身份信息。",
+       "score": 0.8
+      },
+      {
+       "no": 38,
+       "clause": "3.5.1",
+       "text": "制定内部审核计划方案，至少包含贯穿全年的两个不同审核日期；各活动审核频率依风险及以往审核结果确定且至少每年审核一次；范围至少涵盖产品安全与质量管理体系的实施、HACCP 或产品安全计划、产品安保或食品防护、产品欺诈制约计划、为符合本标准而执行的规程。",
+       "score": 1.6
+      },
+      {
+       "no": 39,
+       "clause": "3.5.2",
+       "text": "内部审核由接受过适当培训的合格审核员进行，且与审核活动保持独立。",
+       "score": 0.8
+      },
+      {
+       "no": 40,
+       "clause": "3.5.3",
+       "text": "内部审核计划得到全面实施；内审报告识别符合项和不符合项并包括审核意见的客观证据；结果呈报被审核活动负责人员，商定纠正和预防措施及实施时间框架并及时审核实施结果。",
+       "score": 0.8
+      },
+      {
+       "no": 41,
+       "clause": "3.6.1",
+       "text": "为所有产品提供规格说明，可采用与客户商定的格式；无明确规定时应包括满足法律要求和帮助顾客安全使用产品的关键信息。",
+       "score": 1.6
+      },
+      {
+       "no": 42,
+       "clause": "3.6.2",
+       "text": "与相关当事人签署正式规格协议；如规格未正式商定，能证明已积极采取措施确保正式协议的建立。",
+       "score": 0.8
+      },
+      {
+       "no": 43,
+       "clause": "3.6.3",
+       "text": "具备行之有效的一系列流程确保客户指定的要求得到满足（如把客户要求纳入采购标准，或对购买的产品进一步分拣、分级等处理）。",
+       "score": 0.8
+      },
+      {
+       "no": 44,
+       "clause": "3.6.4",
+       "text": "每当产品、包装或供应商发生变化时或至少每 3 年审查一次规格，记录并保存审查日期及更改审批，并就任何变更寻求正式协议。",
+       "score": 0.8
+      },
+      {
+       "no": 45,
+       "clause": "3.7.1",
+       "text": "具备一个追踪系统，能识别所有产品最终制造商或产品特性最后一次重大变动发生的场所（初级农产品为包装商），并保持记录列明每个产品批次的接收方；适用时符合产品销售或使用国家/地区的法律要求。",
+       "score": 1.6
+      },
+      {
+       "no": 46,
+       "clause": "3.7.2",
+       "text": "至少每年测试一次追踪系统，确保反向可追溯到最后的生产商、正向可追溯至客户，并识别供应链各环节；测试包括对选定批次交易产品的数量盘点；应在 4 小时内追踪到结果（需从外部机构获取信息时为 24 小时）。",
+       "score": 2.4
+      },
+      {
+       "no": 47,
+       "clause": "3.7.3",
+       "text": "当公司委托对产品进行进一步加工、重新贴标签或退货时，保持可追溯性。",
+       "score": 0.8
+      },
+      {
+       "no": 48,
+       "clause": "3.7.4",
+       "text": "确保其产品供应商拥有有效的追踪系统；在供应商审批基于调查问卷、具有法律效力的合同或规范、或历史交易关系而非认证或审核时，追踪系统的验证应在初始审批时进行，其后至少每 3 年一次。",
+       "score": 0.8
+      },
+      {
+       "no": 49,
+       "clause": "3.8.1",
+       "text": "记录和调查所有投诉并记录对问题的调查结果；由经过适当培训的员工及时有效地按所查明问题的严重性和发生频率采取相应纠正措施。",
+       "score": 0.8
+      },
+      {
+       "no": 50,
+       "clause": "3.8.2",
+       "text": "因服务提供商或供应商行为引起的投诉应传达给供应商开展进一步调查，按其严重性和发生频率商定纠正措施并确认实施。",
+       "score": 0.8
+      },
+      {
+       "no": 51,
+       "clause": "3.8.3",
+       "text": "分析与产品和服务有关的投诉数据以获取显著的趋势变化；存在严重投诉或投诉显著增加时开展并运用根本原因分析、执行持续改善措施避免再次发生；分析提供给相关员工、供应商和/或服务提供商。",
+       "score": 0.8
+      },
+      {
+       "no": 52,
+       "clause": "3.9.1",
+       "text": "制定规程处理并纠正在产品安全和质量管理体系中所查明的不符合项；对产品安全、真实性、合法性或质量带来风险的不符合项进行调查和记录（含清晰的不符合项记录、经授权胜任人员对后果的评估、纠正措施、行动责任分配、纠正时间表、纠正措施已实施且有效的验证）。",
+       "score": 1.6
+      },
+      {
+       "no": 53,
+       "clause": "3.9.2",
+       "text": "具备完成根本原因分析的规程；作为最低要求，使用根本原因分析实施必要措施以防止重大或反复出现的不符合项再次发生。",
+       "score": 0.8
+      },
+      {
+       "no": 54,
+       "clause": "3.10.1",
+       "text": "制定管理不合格产品的规程（不符合采购或客户规格、或不符合产品安全要求的产品），包括由分包商报告潜在不合格产品的流程、明确识别不合格产品以防放行、与分包商商定的安全储存规程、必要时向品牌所有者或客户查证、就产品使用或处置界定明确责任、对使用或处置决策的记录，以及因产品安全原因销毁时的销毁记录。",
+       "score": 1.6
+      },
+      {
+       "no": 55,
+       "clause": "3.11.1",
+       "text": "制定明确的规程使分包商和供应商能及时报告影响食品安全、真实性、合法性或质量的突发事件和可能紧急情况，并制定程序、分配职责以核查突发事件并确定采取适当措施。",
+       "score": 0.8
+      },
+      {
+       "no": 56,
+       "clause": "3.11.2",
+       "text": "制定成文的规程报告和有效管理突发事件及产品撤回和召回，召回和撤回规程至少包括：召回管理小组主要人员及其责任、决定召回或撤回的指导原则与需保存的记录、最新关键联系人名单及地址、沟通计划、外部机构支持详情、产品可追溯性与回收处置及库存核对的整体物流计划、根本原因分析及持续改善计划、关键行动时间节点的记录计划；该规程随时可按需上线操作。",
+       "score": 1.6
+      },
+      {
+       "no": 57,
+       "clause": "3.11.3",
+       "text": "至少每年开展一次产品突发事件管理规程（含召回和撤回规程）的测试以确保有效可操作性；保存测试结果并包括主要活动的计时记录，使用测试和实际召回结果审查规程并实施必要改进。",
+       "score": 1.6
+      },
+      {
+       "no": 58,
+       "clause": "3.11.4",
+       "text": "发生重大产品安全事件（包括产品召回或产品安全不符合法规要求）时，应在 3 个工作日之内通知为其签发证书的认证机构，并提供足够信息协助评估事件对当前认证持续有效性是否有影响。",
+       "score": 1.6
+      }
+     ]
+    },
+    {
+     "index": 4,
+     "title": "4 供应商和分包服务管理（条款 4.1–4.9）",
+     "score": 34.4,
+     "items": [
+      {
+       "no": 59,
+       "clause": "4.1.1",
+       "text": "制定供应商审批规程，确定对每种贸易产品的供应商和生产商/加工商/包装商进行初始和后续审批的流程，要求以风险评估结果为基础（考虑产品性质与相关风险、客户具体要求、销售国或进口国法律要求、来源或原产国、掺假或欺诈潜在风险、产品品牌标识）；在出现变化、出现新风险、发生产品召回或撤回后及至少每 3 年更新风险评估。",
+       "score": 1.6
+      },
+      {
+       "no": 60,
+       "clause": "4.1.2",
+       "text": "产品制造商的初始和后续审批流程以风险为基础，包含以下一项或几项：适用的 BRCGS 标准或以 GFSI 为基准的其他相关标准的有效认证（范围覆盖所交易产品）；供应商审核（覆盖产品安全、可追溯性测试、HACCP 或危害和风险管理审查、产品安保/食品防护计划、产品真实性计划及良好操作规范）；仅评估为低风险的产品在提供合理说明时可用制造商工厂调查问卷（由具备适当资质人员审查和验证）；仅评估为低风险的非食品产品可用具有法律效力的合同/规范或历史贸易关系；客户指定制造商且由客户承担责任时本条款可能不适用但应保留记录。",
+       "score": 2.4
+      },
+      {
+       "no": 61,
+       "clause": "4.1.3",
+       "text": "备有最新审批认可供应商一览表或数据库，可以是纸质版本或受控的电子版本。",
+       "score": 0.8
+      },
+      {
+       "no": 62,
+       "clause": "4.1.4",
+       "text": "产品通过其他代理商或经纪商采购时，了解最终制造商、加工商或包装商的身份信息，或对大宗商品了解产品的集散地。",
+       "score": 0.8
+      },
+      {
+       "no": 63,
+       "clause": "4.1.5",
+       "text": "产品通过其他代理商或经纪商采购时，除非对方自身属于本标准或其他符合 GFSI 基准之标准的认证商家，应获取批准制造商、包装商或原材料集散地所依赖的信息。",
+       "score": 0.8
+      },
+      {
+       "no": 64,
+       "clause": "4.1.6",
+       "text": "保存对生产商或包装商审批过程的记录（包括审核报告或证书的验证）以确认交易产品制造或包装工厂的产品安全状况，并记录识别出潜在问题后的相关跟进措施。",
+       "score": 0.8
+      },
+      {
+       "no": 65,
+       "clause": "4.1.7",
+       "text": "制定对制造或包装工厂进行后续审核的成文流程，流程基于风险评估并使用明确绩效参数（可包括投诉、产品测试结果、监管警告或警报、客户拒收或反馈意见）且完整执行；审批基于调查问卷时至少每 3 年重新审批；合同或正式协议要求供应商告知正式审查之间发生的任何重大变动（含认证状态变化）。",
+       "score": 0.8
+      },
+      {
+       "no": 66,
+       "clause": "4.1.8",
+       "text": "规程规定 4.1.2 供应商审批流程例外情况（如客户指定材料，或大宗农产品等无法提供有效审批信息但用产品测试验证质量安全）的处理方式；交易客户品牌产品时向客户澄清相关例外情况。",
+       "score": 0.8
+      },
+      {
+       "no": 67,
+       "clause": "4.2.1",
+       "text": "建立服务提供商（如运输、储存、实验室检测或产品标签）的审批和监控规程，审批规程基于风险评估并考虑产品的安全和质量风险、符合法律要求（如重量或标签控制）、客户具体要求、产品安全的潜在风险（脆弱性和食品防护评估中识别的风险）。",
+       "score": 1.6
+      },
+      {
+       "no": 68,
+       "clause": "4.2.2",
+       "text": "服务提供商审批规程基于以下一项或多项：供应商认证（如 BRCGS 标准或其他以 GFSI 为基准之标准或 ISO 标准）；供应商审核（范围包括产品安全、可追溯性测试、危害分析审查、产品安保/食品防护计划、产品真实性计划及良好操作规范）；历史业绩；经具备适当资质人员审查和验证的供应商调查问卷；运营执照。",
+       "score": 0.8
+      },
+      {
+       "no": 69,
+       "clause": "4.2.3",
+       "text": "与服务提供商签署合同或正式协议，明确规定服务要求并确保与服务相关的潜在产品安全风险有相应措施得到落实。",
+       "score": 0.8
+      },
+      {
+       "no": 70,
+       "clause": "4.2.4",
+       "text": "建立服务提供商的正式审查程序，以基于风险评估确定的频率开展审查但至少每年一次，使用明确绩效参数（含投诉、产品测试结果、客户拒收或反馈意见）并完整执行。",
+       "score": 0.8
+      },
+      {
+       "no": 71,
+       "clause": "4.2.5",
+       "text": "服务提供商将其涵盖的活动分包给另一家公司时，分包商应依据相关法律工作、保持产品的可追溯性、按服务提供商风险评估确定的要求开展工作；与服务提供商的合同或正式协议明确允许或禁止分包的详细信息。",
+       "score": 0.8
+      },
+      {
+       "no": 72,
+       "clause": "4.2.6",
+       "text": "规程规定 4.2.2 服务提供商审批流程例外情况（如服务提供商由客户指定，或紧急运输等无法提供有效审批信息但用产品测试验证质量安全）的处理方式；交易客户品牌产品时向客户澄清相关例外情况。",
+       "score": 0.8
+      },
+      {
+       "no": 73,
+       "clause": "4.3.1",
+       "text": "评估其指定的服务提供商在分包运输和储存过程中因产品偷盗未遂、污染、以次充好或损毁对产品安全造成的潜在风险；将风险评估确定的安全措施记录在案并纳入与直接经手产品的服务提供商签署的合同或相应条款。",
+       "score": 1.6
+      },
+      {
+       "no": 74,
+       "clause": "4.3.2",
+       "text": "针对处理产品的服务提供商的安全安排，除非其获得包含食品防护或产品安保的 BRCGS 标准或其他以 GFSI 为基准之标准的认证，应在合同开始时予以验证，随后根据风险确定验证频率。",
+       "score": 0.8
+      },
+      {
+       "no": 75,
+       "clause": "4.4.1",
+       "text": "制定产品取样或检验计划以确保产品符合采购规格并符合法律和安全要求（可由代理商/经纪商或供应商完成），按风险选择检验技术（产品安全检验、真实性/完好性检验、产品质量评估、制造商的检验和产品测试）；基于取样时取样率和评估流程以风险分析为基础并记录，保存评估或分析结果的记录。",
+       "score": 0.8
+      },
+      {
+       "no": 76,
+       "clause": "4.4.2",
+       "text": "合格验证由供应商提供（如合格证或分析证明）时，证实对所提供信息的置信程度；制定规程确保供应商实验室结果的可靠性，包括按 ISO/IEC 17025 的要求和原则运营或获得认可资质的实验室。",
+       "score": 0.8
+      },
+      {
+       "no": 77,
+       "clause": "4.4.3",
+       "text": "所经手产品标识上若有原产地、产销监管链、产品或所用原材料的保证或「大宗商品定点溯源」状态等宣称信息，应从供应商处或独立获取信息验证相应宣称。",
+       "score": 0.8
+      },
+      {
+       "no": 78,
+       "clause": "4.4.4",
+       "text": "公司经手或转包对产品安全或合法性至关重要的分析时，公司实验室或分包商应取得获认可实验室的资质或按 ISO/IEC 17025 的要求和原则操作；使用未经认证的测试方法应提供成文的正当理由说明。",
+       "score": 0.8
+      },
+      {
+       "no": 79,
+       "clause": "4.4.5",
+       "text": "理解外部实验室结果的显著性并采取相应措施，及时实施相应措施以应对负面结果或变化趋势。",
+       "score": 0.8
+      },
+      {
+       "no": 80,
+       "clause": "4.5.1",
+       "text": "制定成文的流程验证所经销产品的合法性，适用时包括标签信息、符合相关法律要求（如出口或成分要求、过敏原标签、INCI 清单、特定产品安全法规）、符合数量或容量要求；此类责任由客户履行时在合同中明确说明。",
+       "score": 1.6
+      },
+      {
+       "no": 81,
+       "clause": "4.5.2",
+       "text": "制定成文的流程验证产品标注信息符合客户要求。",
+       "score": 0.8
+      },
+      {
+       "no": 82,
+       "clause": "4.6.1",
+       "text": "制定与潜在供应商进行新产品研发活动的管理规程，包括定义开发产品要求的项目简介、根据简介审查产品样品的流程、正式的产品审批程序。",
+       "score": 0.8
+      },
+      {
+       "no": 83,
+       "clause": "4.6.2",
+       "text": "确保制造工厂的 HACCP 或危害和风险管理计划内包含所有新产品，从而对相应危害进行评估并实施适当的控制措施。",
+       "score": 0.8
+      },
+      {
+       "no": 84,
+       "clause": "4.6.3",
+       "text": "能证明已通过保质期测试评估或根据储存条件和产品搬运过程制定的书面规定来验证新产品的保质期；方法不可行时提供成文的、基于科学依据的验证方式。",
+       "score": 0.8
+      },
+      {
+       "no": 85,
+       "clause": "4.6.4",
+       "text": "制定流程确保新产品的标签符合产品使用地相关法律要求（含实现供应链内或由客户对产品安全搬运、陈列、贮藏、制备和使用的信息），并依据产品配方和销售国家/地区要求核实标签成分、过敏原和过敏原交叉污染信息正确无误。",
+       "score": 0.8
+      },
+      {
+       "no": 86,
+       "clause": "4.6.5",
+       "text": "产品旨在实现满足某个消费群体需要的产品宣称（如营养相关宣称、「低糖」、「经皮肤病学测试」）时，确保对产品配方和生产流程进行全面验证以支持产品宣称信息。",
+       "score": 0.8
+      },
+      {
+       "no": 87,
+       "clause": "4.7.1",
+       "text": "产品放行要求批准时，制定规程确保在达到所有放行标准且获得公司授权后再履行产品放行操作，包括受公司委托代持产品的场所。",
+       "score": 0.8
+      },
+      {
+       "no": 88,
+       "clause": "4.8.1",
+       "text": "建立相应流程以访问有关可对产品产生掺假或以次充好风险的供应链以往和现存威胁信息，此类信息可来源于行业协会、政府来源或其他独立资源。",
+       "score": 0.8
+      },
+      {
+       "no": 89,
+       "clause": "4.8.2",
+       "text": "对所有产品或产品组进行成文的脆弱性评估以评定掺假或以次充好的潜在风险，考虑任何过往记录、可致使掺假更具吸引力的经济因素、直接经手产品的难易程度、识别掺假定期测试的复杂程度、产品的特性；保持对脆弱性评估的复核并每年进行一次正式审核。",
+       "score": 1.6
+      },
+      {
+       "no": 90,
+       "clause": "4.8.3",
+       "text": "在产品被识别出存在掺假或以次充好特定风险的情况下，制定书面的欺诈制约计划，详细介绍减少风险的适当保障措施和/或测试流程。",
+       "score": 1.6
+      },
+      {
+       "no": 91,
+       "clause": "4.9.1",
+       "text": "根据客户的具体要求处置过剩的客户品牌产品，丢弃或使其失去使用功能。",
+       "score": 0.8
+      },
+      {
+       "no": 92,
+       "clause": "4.9.2",
+       "text": "将不符合规格的客户品牌产品捐助给慈善机构或其他组织时，取得品牌所有者的事先同意。",
+       "score": 0.8
+      },
+      {
+       "no": 93,
+       "clause": "4.9.3",
+       "text": "捐赠产品时建立流程，确保所有捐赠产品均适合消费或使用且满足法律要求。",
+       "score": 0.8
+      }
+     ]
+    },
+    {
+     "index": 5,
+     "title": "5 人事（条款 5.1）",
+     "score": 2.4,
+     "items": [
+      {
+       "no": 94,
+       "clause": "5.1.1",
+       "text": "所有人员（包括临时工）均在开始工作之前接受适当的培训，并在整个工作期间受到充分的监督和指导。",
+       "score": 0.8
+      },
+      {
+       "no": 95,
+       "clause": "5.1.2",
+       "text": "制定成文的培训规程和记录，以此证明培训是适当且有效的。",
+       "score": 0.8
+      },
+      {
+       "no": 96,
+       "clause": "5.1.3",
+       "text": "对直接涉及产品安全、真实性、合法性和质量工作的员工的能力进行例行审查，并视具体情况提供相关培训（新培训、进修培训、辅导、指导或在职培训等）。",
+       "score": 0.8
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "options": [
+  {
+   "value": "yes",
+   "label": "已具备（打勾 ✓）"
+  },
+  {
+   "value": "no",
+   "label": "未具备（打叉 ×）"
+  }
+ ]
+};
+const CLASS = DATA.classes[0];
+const OPTIONS = DATA.options;
+
+const SUBMIT_URL = 'https://n8n.auditedmakers.com/webhook/checklist-submit';
+const CATEGORY = 'ab';   /* 本页对应的提交类别：food|packaging|cp|ab|sd */
+const STORE_KEY = 'rc_checklist_answers';   /* 与合集页共用同一份本地记录（按类 id 分组） */
+
+const state = JSON.parse(localStorage.getItem(STORE_KEY) || '{}');
+function save(){ localStorage.setItem(STORE_KEY, JSON.stringify(state)); }
+function bag(){ if(!state[CLASS.id]) state[CLASS.id] = {}; return state[CLASS.id]; }
+function esc(s){ return String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+
+function render(){
+  document.getElementById('meta').innerHTML =
+    `<div style="font-size:16px;font-weight:700;color:var(--brand)">${esc(CLASS.title)}</div>
+     <div style="color:var(--gray);font-size:13px;margin-top:2px">${esc(CLASS.subtitle)}</div>
+     <div class="meta"><span>题数 <i>${CLASS.item_count}</i></span><span>满分 <i>${CLASS.total_score}</i></span>
+     <span>板块 <i>${CLASS.sections.length}</i></span><span>每题两项：<i>${OPTIONS.map(o=>esc(o.label)).join(' / ')}</i></span></div>`;
+
+  const a = bag();
+  document.getElementById('questions').innerHTML = CLASS.sections.map(sec =>
+    `<h2 class="sec"><span>${esc(sec.title)}</span><small>本板块 ${sec.items.length} 题 · ${sec.score} 分</small></h2>` +
+    sec.items.map(it => `
+      <div class="q" id="q_${CLASS.id}_${it.no}">
+        <div class="qhead">
+          <span class="no">${it.no}</span>
+          <span class="clause">${esc(it.clause)}</span>
+          <span class="txt">${esc(it.text)}</span>
+        </div>
+        <div class="opts" data-no="${it.no}">
+          ${OPTIONS.map(o => `<label class="opt ${o.value === 'yes' ? 'yes' : 'no'}" data-v="${o.value}">
+             <input type="radio" name="q${it.no}" value="${o.value}" ${a[it.no] === o.value ? 'checked' : ''}>
+             ${esc(o.label)}</label>`).join('')}
+        </div>
+      </div>`).join('')
+  ).join('');
+
+  document.querySelectorAll('.opts').forEach(box => {
+    const no = box.dataset.no;
+    const mark = () => {
+      box.querySelectorAll('label.opt').forEach(l =>
+        l.classList.toggle('on', l.querySelector('input').checked));
+      document.getElementById(`q_${CLASS.id}_${no}`).classList.toggle('answered', !!a[no]);
+    };
+    box.querySelectorAll('input').forEach(inp => inp.onchange = () => { a[no] = inp.value; save(); mark(); stats(); });
+    mark();
+  });
+  stats();
+}
+
+function stats(){
+  const a = bag();
+  let done = 0, score = 0;
+  CLASS.sections.forEach(s => s.items.forEach(it => {
+    if(a[it.no]){ done++; if(a[it.no] === 'yes') score += it.score; }
+  }));
+  const pct = CLASS.total_score ? Math.round(score / CLASS.total_score * 100) : 0;
+  document.getElementById('s_done').textContent = done;
+  document.getElementById('s_total').textContent = CLASS.item_count;
+  document.getElementById('s_score').textContent = (+score.toFixed(2));
+  document.getElementById('s_full').textContent = CLASS.total_score;
+  document.getElementById('s_pct').textContent = pct + '%';
+}
+
+function result(){
+  const a = bag();
+  let score = 0, done = 0;
+  const rows = CLASS.sections.map(s => {
+    let sd = 0, ss = 0;
+    s.items.forEach(it => { if(a[it.no]){ done++; if(a[it.no] === 'yes'){ ss += it.score; } } sd++; });
+    score += ss;
+    const rate = s.score ? Math.round(ss / s.score * 100) : 0;
+    return `<tr><td>${esc(s.title)}</td><td class="n">${sd}/${s.items.length}</td>
+            <td class="n">${+ss.toFixed(2)}/${s.score}</td><td class="n">${rate}%</td></tr>`;
+  }).join('');
+  const weak = [];
+  CLASS.sections.forEach(s => s.items.forEach(it => { if(a[it.no] === 'no') weak.push([it, s.title]); }));
+  const pct = CLASS.total_score ? Math.round(score / CLASS.total_score * 100) : 0;
+  const el = document.getElementById('result');
+  el.innerHTML =
+   `<div style="font-size:16px;font-weight:700;color:var(--brand)">自查结果 · ${esc(CLASS.title)}</div>
+    <div style="margin:6px 0 12px;font-size:14px">已答 <b>${done}/${CLASS.item_count}</b> 题 ·
+      得分 <b style="color:var(--brand);font-size:19px">${+score.toFixed(2)}</b>/100 ·
+      达成率 <b>${pct}%</b>${done < CLASS.item_count ? ` · <span style="color:var(--warn)">尚有 ${CLASS.item_count - done} 题未答</span>` : ''}</div>
+    <table><tr><th>板块</th><th class="n">已答/题数</th><th class="n">得分/满分</th><th class="n">达成率</th></tr>${rows}</table>
+    <div style="margin-top:14px;font-weight:700;color:var(--brand)">待整改弱项（选了「未具备」的 ${weak.length} 条，按分值从高到低）</div>
+    ${weak.length ? `<ul class="weak">${weak.sort((x,y)=>y[0].score-x[0].score).map(([it,s]) =>
+        `<li><em>${it.no}.</em><i>[${esc(it.clause)} · ${it.score} 分]</i>${esc(it.text)} <i style="color:#98A8A1">— ${esc(s)}</i></li>`).join('')}</ul>`
+      : `<div style="color:var(--gray);font-size:13.5px;margin-top:6px">暂无（未选择「未具备」，或还没开始作答）。</div>`}
+    <div style="margin-top:12px;font-size:12.5px;color:var(--gray)">填好上方的工厂名称与邮箱后，点下方「提交自查结果」即可把得分与未勾选条款号发给我们。</div>`;
+  el.classList.add('show');
+  el.scrollIntoView({behavior:'smooth', block:'start'});
+}
+
+/* ===== 提交自查结果 ===== */
+function setStatus(kind, msg, view){
+  const el = document.getElementById('sub_status');
+  el.className = 'status show ' + kind;
+  el.innerHTML = msg;
+  if(view === 'form') document.getElementById('formcard').scrollIntoView({behavior:'smooth', block:'center'});
+  else if(view === 'box') document.getElementById('submitbox').scrollIntoView({behavior:'smooth', block:'center'});
+}
+
+function summarize(){
+  const a = bag();
+  let answered = 0, checked = 0, score = 0, total = 0;
+  const unchecked = [];
+  CLASS.sections.forEach(s => s.items.forEach(it => {
+    total++;
+    const v = a[it.no];
+    if(v){ answered++; if(v === 'yes'){ checked++; score += it.score; } }
+    if(v !== 'yes') unchecked.push(String(it.clause));   /* 未勾选「已具备」的条款号 */
+  }));
+  return {answered, checked, total, unchecked, score: +score.toFixed(2)};
+}
+
+async function submit(){
+  const btn = document.getElementById('btn_submit');
+  const site = (document.getElementById('f_site').value || '').trim();
+  const email = (document.getElementById('f_email').value || '').trim();
+
+  if(!site){ setStatus('err', '⚠️ 请先填写「工厂名称」。', 'form'); document.getElementById('f_site').focus(); return; }
+  if(!email){ setStatus('err', '⚠️ 请先填写「你的邮箱」。', 'form'); document.getElementById('f_email').focus(); return; }
+  if(!/^[^\s@]+@[^\s@]+\.[A-Za-z]{2,}$/.test(email)){
+    setStatus('err', '⚠️ 邮箱格式不正确，请检查后重试（例：qa@example.com）。', 'form');
+    document.getElementById('f_email').focus(); return; }
+
+  const sm = summarize();
+  if(sm.answered < 1){ setStatus('err', '⚠️ 请先在下面至少勾选一题的「已具备 / 未具备」，再提交。', 'form'); return; }
+
+  const payload = {
+    site_name: site,
+    email: email,
+    category: CATEGORY,
+    score: sm.score,
+    total: 100,
+    unchecked: sm.unchecked,
+    checked_count: sm.checked,
+    total_count: sm.total,
+    submitted_at: new Date().toISOString()
+  };
+
+  btn.disabled = true;
+  setStatus('wait', '正在提交，请稍候…', 'box');
+  try{
+    const resp = await fetch(SUBMIT_URL, {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(payload)
+    });
+    let j = null;
+    try{ j = await resp.json(); }catch(e){ j = null; }
+    if(!resp.ok || !j || j.ok !== true){
+      throw new Error('服务端返回 HTTP ' + resp.status + (j && j.message ? ' · ' + j.message : ''));
+    }
+    setStatus('ok',
+      '✅ 已提交，我们会尽快与您联系。<span class="sm">本次得分 <b>' + sm.score + '</b>/100 · ' +
+      '已勾选「已具备」' + sm.checked + '/' + sm.total + ' 题 · 未勾选条款号已一并发送（共 ' + sm.unchecked.length + ' 条）。' +
+      '如需修改答案，改完再点一次「提交自查结果」即可覆盖更新。</span>', 'box');
+  }catch(err){
+    setStatus('err',
+      '❌ 提交失败：' + esc(err && err.message ? err.message : '网络异常') +
+      '<span class="sm">您填写的内容和作答都还保留在本页，可直接再点「提交自查结果」重试；' +
+      '若多次失败，请把本页结果截图或存 PDF 后发到 leeting770708@gmail.com。</span>', 'box');
+  }finally{
+    btn.disabled = false;
+  }
+}
+
+render();
+document.getElementById('btn_res').onclick = result;
+document.getElementById('btn_print').onclick = () => window.print();
+document.getElementById('btn_submit').onclick = submit;
+document.getElementById('btn_submit2').onclick = submit;
+document.getElementById('btn_rst').onclick = () => {
+  if(confirm('确定清空【' + CLASS.title + '】已选答案？')){ state[CLASS.id] = {}; save(); render(); }
+};
+</script>
+<div style="text-align:center;color:#888;font-size:12px;padding:16px 0;line-height:1.7">本自查清单由壬辰合规整理，供工厂内部自查参考；正式要求以 BRCGS 官方标准为准。如需过证辅导请联系 liting@renchen-compliance.com。</div>
+</body>
+</html>
