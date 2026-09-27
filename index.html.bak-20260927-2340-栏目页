@@ -6,7 +6,6 @@
 <title>壬辰合规 | 出口食品与包装企业国际标准体系咨询（BRCGS / IFS / FSSC）</title>
 <meta name="description" content="壬辰合规专注出口食品与包装企业的国际标准体系咨询：BRCGS 食品、包材 PM、消费品 CP、经纪 A&B，IFS Food、IFS PACsecure，FSSC 22000、MSC/ASC。">
 <meta name="robots" content="index,follow">
-<link rel="canonical" href="https://renchen-compliance.com/">
 <style>
   :root{ --green:#1a4d3e; --ink:#2b2b2b; --soft:#f7f6f2; --line:#e6e3db; --muted:#777; }
   *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
@@ -89,7 +88,6 @@
     .two-col{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:start;}
   }
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"壬辰合规","alternateName":"RENCHEN CONSULTING","url":"https://renchen-compliance.com/","areaServed":"CN","description":"为出口食品与包装企业提供 BRCGS、IFS、FSSC 22000 等国际标准体系咨询与培训","knowsAbout":["BRCGS Food","BRCGS Packaging Materials","BRCGS Consumer Products","BRCGS Agents & Brokers","IFS Food","IFS PACsecure","FSSC 22000","MSC CoC"],"serviceType":["认证体系咨询","体系培训","复审支持"],"address":{"@type":"PostalAddress","addressRegion":"江苏省","addressCountry":"CN"},"telephone":"+86-13616196518","email":"leeting770708@gmail.com"}</script>
 </head>
 <body>
 
@@ -98,7 +96,6 @@
     <div class="brand">壬辰合规<small>RENCHEN CONSULTING</small></div>
     <nav class="menu">
       <a href="#services">服务</a>
-      <a href="/check/food.html">自查清单</a>
       <a href="#experience">经验</a>
       <a href="#process">流程</a>
       <a href="#cases">技术案例</a>
@@ -131,29 +128,28 @@
   <div class="wrap">
     <h2>服务范围</h2>
     <div class="svc-grid">
-      <a class="svc" href="/brcgs-food/"><span class="std">BRCGS · 食品 Issue 9</span><h3>食品加工企业认证辅导</h3>
-        <p>适用于出口食品生产、初级加工企业。覆盖 HARA 危害分析、前提方案、追溯与召回、现场硬件符合性。</p><span class="more">了解详情 →</span></a>
-      <a class="svc" href="/brcgs-packaging/"><span class="std">BRCGS · 包装材料 Issue 7</span><h3>包材企业认证辅导</h3>
-        <p>适用于塑料、纸、金属等各类包装及印刷企业。覆盖产品安全与质量管理体系、现场标准、产品与过程控制。</p><span class="more">了解详情 →</span></a>
-      <a class="svc" href="/brcgs-consumer/"><span class="std">BRCGS · 消费品 Issue 4</span><h3>消费品企业认证辅导</h3>
-        <p>适用于 General Merchandise 及 Personal Care &amp; Household 品类，含 CP 全条款体系搭建。</p><span class="more">了解详情 →</span></a>
-      <a class="svc" href="/brcgs-agents-brokers/"><span class="std">BRCGS · 经纪与代理 Issue 3</span><h3>经纪与代理企业认证辅导</h3>
-        <p>适用于贸易商、进口商、代理商等非生产性企业，聚焦产品安全管控与供应商管理。</p><span class="more">了解详情 →</span></a>
-      <a class="svc" href="/ifs/"><span class="std">IFS Food</span><h3>IFS 食品认证辅导</h3>
-        <p>适用于欧洲零售商与品牌商供应链食品企业，覆盖 HACCP 与 IFS 特有要求。</p><span class="more">了解详情 →</span></a>
-      <a class="svc" href="/ifs/"><span class="std">IFS PACsecure</span><h3>IFS 包材认证辅导</h3>
-        <p>适用于包装材料生产企业，覆盖食品包装安全与质量管理要求。</p><span class="more">了解详情 →</span></a>
-      <a class="svc" href="/fssc-22000/"><span class="std">FSSC 22000</span><h3>FSSC 22000 体系辅导</h3>
-        <p>适用于食品制造、包装、仓储物流企业，基于 ISO 22000 的食品安全管理体系认证。</p><span class="more">了解详情 →</span></a>
-      <a class="svc" href="/msc-asc/"><span class="std">MSC / ASC</span><h3>可持续海产品认证辅导</h3>
-        <p>MSC（Marine Stewardship Council，海洋管理委员会）可持续渔业及产销监管链（CoC）认证，适用于海产品捕捞、加工与贸易企业；ASC（水产养殖管理委员会）适用于养殖企业。</p><span class="more">了解详情 →</span></a>
-      <a class="svc" href="/training/"><span class="std">企业培训</span><h3>标准条款 / 体系专项培训</h3>
-        <p>BRCGS、IFS、FSSC 标准条款精讲（管理层/内审员/全员）；危害分析（HARA）、供应商管理、可追溯等单项流程培训；迎审技巧与不符合项整改培训，可到厂或线上进行。</p><span class="more">了解详情 →</span></a>
-      <a class="svc" href="/review/"><span class="std">通用服务</span><h3>复审冲刺 / 文件体检 / 内审支持</h3>
-        <p>针对已获证企业：复审前差距分析、体系文件审查、内部审核支持、不符合项整改辅导。</p><span class="more">了解详情 →</span></a>
+      <div class="svc"><span class="std">BRCGS · 食品 Issue 9</span><h3>食品加工企业认证辅导</h3>
+        <p>适用于出口食品生产、初级加工企业。覆盖 HARA 危害分析、前提方案、追溯与召回、现场硬件符合性。</p></div>
+      <div class="svc"><span class="std">BRCGS · 包装材料 Issue 7</span><h3>包材企业认证辅导</h3>
+        <p>适用于塑料、纸、金属等各类包装及印刷企业。覆盖产品安全与质量管理体系、现场标准、产品与过程控制。</p></div>
+      <div class="svc"><span class="std">BRCGS · 消费品 Issue 4</span><h3>消费品企业认证辅导</h3>
+        <p>适用于 General Merchandise 及 Personal Care &amp; Household 品类，含 CP 全条款体系搭建。</p></div>
+      <div class="svc"><span class="std">BRCGS · 经纪与代理 Issue 3</span><h3>经纪与代理企业认证辅导</h3>
+        <p>适用于贸易商、进口商、代理商等非生产性企业，聚焦产品安全管控与供应商管理。</p></div>
+      <div class="svc"><span class="std">IFS Food</span><h3>IFS 食品认证辅导</h3>
+        <p>适用于欧洲零售商与品牌商供应链食品企业，覆盖 HACCP 与 IFS 特有要求。</p></div>
+      <div class="svc"><span class="std">IFS PACsecure</span><h3>IFS 包材认证辅导</h3>
+        <p>适用于包装材料生产企业，覆盖食品包装安全与质量管理要求。</p></div>
+      <div class="svc"><span class="std">FSSC 22000</span><h3>FSSC 22000 体系辅导</h3>
+        <p>适用于食品制造、包装、仓储物流企业，基于 ISO 22000 的食品安全管理体系认证。</p></div>
+      <div class="svc"><span class="std">MSC / ASC</span><h3>可持续海产品认证辅导</h3>
+        <p>MSC（Marine Stewardship Council，海洋管理委员会）可持续渔业及产销监管链（CoC）认证，适用于海产品捕捞、加工与贸易企业；ASC（水产养殖管理委员会）适用于养殖企业。</p></div>
+      <div class="svc"><span class="std">企业培训</span><h3>标准条款 / 体系专项培训</h3>
+        <p>BRCGS、IFS、FSSC 标准条款精讲（管理层/内审员/全员）；危害分析（HARA）、供应商管理、可追溯等单项流程培训；迎审技巧与不符合项整改培训，可到厂或线上进行。</p></div>
+      <div class="svc"><span class="std">通用服务</span><h3>复审冲刺 / 文件体检 / 内审支持</h3>
+        <p>针对已获证企业：复审前差距分析、体系文件审查、内部审核支持、不符合项整改辅导。</p></div>
       <div class="svc"><span class="std">海外站点运营</span><h3>海外 SEO 展示站点（已获证企业免费）</h3>
         <p>按产品品类把企业与产品信息发布到海外展示站点 <a href="https://auditedmakers.com" target="_blank" rel="noopener">auditedmakers.com</a>，面向用 Google 找供应商的海外买家，帮助工厂展现产品、拓展海外客源；需要时可提供页面优化与内容更新服务。</p></div>
-
     </div>
   </div>
 </section>
