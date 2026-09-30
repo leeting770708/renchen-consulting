@@ -205,8 +205,9 @@ $('#submit').addEventListener('click',()=>{
     : score>=40?['准备期','体系要素还不全，建议先做差距分析，再做文件与现场整改。']
     : ['起步期','建议先把基础体系搭起来（HACCP / 前提方案 + 关键人员培训）。'];
   const top = lost.filter(x=>x.gap>0).sort((a,b)=>b.gap-a.gap).slice(0,3);
-  const gaps = top.length ? top.map(x=>`<li><b>${x.q}</b>：${x.act} → 需要补强（${ACT[std] ? '本类重点关注 ' + ACT[std] : ''}）</li>`).join('')
+  const gaps = top.length ? top.map(x=>`<li><b>${x.q}</b>：当前「${x.act}」→ 建议补强</li>`).join('')
     : '<li>没有明显短板，可以准备认证审核了。</li>';
+  const focus = ACT[std] ? `<p class="hint" style="margin:10px 0 0">本类审核重点关注：${ACT[std]}</p>` : '';
   $('#result').style.display='block';
   $('#result').innerHTML = `
     <div class="score">${score}<small> / 100</small></div>
@@ -214,6 +215,7 @@ $('#submit').addEventListener('click',()=>{
     <p style="margin:8px 0 0;color:#4b5751">${NAMES[std]} · ${band[1]}</p>
     <p style="margin:14px 0 4px;font-weight:600">最需要补的三项</p>
     <ul class="gaps">${gaps}</ul>
+    ${focus}
     <div class="cta">
       <p style="font-weight:600;margin:0">把分数发我，给你一份针对性清单</p>
       <p class="ph">手机号码：<b>13616196518</b></p>
