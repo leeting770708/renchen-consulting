@@ -8,6 +8,15 @@
 <meta name="robots" content="index,follow">
 <link rel="canonical" href="https://renchen-compliance.com/ifs/">
 <style>
+  /* 链接统一：去掉浏览器默认蓝，改用墨绿 */
+  a{color:inherit;text-decoration:none}
+  a:hover{color:var(--green)}
+  p a,li a,dd a,td a,blockquote a{color:var(--green);border-bottom:1px solid rgba(26,77,62,.35);transition:border-color .15s}
+  p a:hover,li a:hover,dd a:hover,td a:hover{border-bottom-color:var(--green)}
+  .card h3,.card .t{color:var(--green)}
+  .more{color:var(--green);font-weight:600}
+  .card:hover .more{color:#0d3a2e}
+
   @font-face{font-family:"RCSerif";src:url("/fonts/NotoSerifSC-Bold.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
   h1,h2,h3,h1 *,h2 *,h3 *{font-family:"RCSerif","Noto Serif SC","Songti SC","SimSun",serif;letter-spacing:.4px}
 
