@@ -3,238 +3,232 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>BRCGS / IFS / FSSC 认证准备度自测 · 壬辰合规</title>
-<meta name="description" content="15 题自测，2 分钟得出你的工厂离 BRCGS 食品 / 包材 / 消费品、IFS、FSSC 22000 认证还有多远，并给出最需要补的三项。">
+<title>认证准备度自测 · BRCGS / IFS / FSSC 22000 · 壬辰合规</title>
+<meta name="description" content="2 分钟自测：BRCGS 食品、包材、消费品、经纪商、储运，IFS 食品、包材、消费品，FSSC 22000 认证准备度评估，测完给出最需要补的三项。">
+<meta name="keywords" content="BRCGS认证,IFS认证,FSSC22000,出口食品认证,包材认证,消费品认证,认证辅导,自测">
 <link rel="canonical" href="https://renchen-compliance.com/assessment/">
 <meta property="og:title" content="认证准备度自测 · 壬辰合规">
-<meta property="og:description" content="15 题，2 分钟，看你离证书还有多远">
+<meta property="og:description" content="15 题、2 分钟，看看你的工厂离 BRCGS / IFS / FSSC 证书还有多远。">
 <meta property="og:type" content="website">
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
-  background:#f7f6f2;color:#2b2b2b;line-height:1.7;-webkit-font-smoothing:antialiased}
-.wrap{max-width:720px;margin:0 auto;padding:0 18px}
-header{padding:26px 0 8px;text-align:center}
-header .brand{font-size:15px;letter-spacing:.16em;color:#1A4D3E;font-weight:600}
-header h1{font-size:24px;margin:10px 0 6px;color:#1A4D3E;font-weight:700}
-header p{color:#6b6b6b;font-size:14px}
-.tabs{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:20px 0 6px}
-.tab{padding:8px 14px;border:1px solid #cfd8d3;border-radius:999px;background:#fff;font-size:14px;color:#4a5a52;cursor:pointer;transition:.15s}
-.tab.on{background:#1A4D3E;border-color:#1A4D3E;color:#fff}
-.card{background:#fff;border:1px solid #e8e6e0;border-radius:14px;padding:22px 20px;margin:16px 0 26px}
-.q{padding:16px 0;border-bottom:1px dashed #ecebe6}
-.q:last-of-type{border-bottom:0}
-.q .t{font-weight:600;font-size:15px;margin-bottom:10px}
-.q .t i{color:#1A4D3E;font-style:normal;margin-right:6px}
-.opts{display:flex;flex-wrap:wrap;gap:8px}
-.opt{border:1px solid #dcdad3;border-radius:9px;padding:8px 13px;font-size:14px;background:#fbfbf9;cursor:pointer}
-.opt.on{border-color:#1A4D3E;background:#eef4f1;color:#1A4D3E;font-weight:600}
-.btn{display:block;width:100%;padding:15px;border:0;border-radius:12px;background:#1A4D3E;color:#fff;font-size:16px;font-weight:600;
-  letter-spacing:.04em;cursor:pointer;margin-top:20px}
-.btn:disabled{background:#b9c4bf;cursor:default}
-.progress{height:4px;background:#e8e6e0;border-radius:4px;overflow:hidden;margin:14px 0 0}
-.progress i{display:block;height:100%;background:#1A4D3E;width:0;transition:.25s}
-#result{display:none}
-.score{text-align:center;padding:8px 0 4px}
-.score .n{font-size:56px;font-weight:700;color:#1A4D3E;line-height:1.1}
-.score .n small{font-size:18px;color:#8a8a8a;font-weight:400}
-.score .band{font-size:19px;font-weight:700;margin-top:6px}
-.score .say{color:#666;font-size:14px;margin-top:8px}
-.gaps{margin:18px 0 6px}
-.gaps h3,.cta h3{font-size:16px;color:#1A4D3E;margin-bottom:10px}
-.gap{background:#fbfaf7;border-left:3px solid #1A4D3E;border-radius:0 8px 8px 0;padding:10px 14px;margin-bottom:10px;font-size:14px}
-.gap b{color:#1A4D3E}
-.cta{border-top:1px solid #ecebe6;margin-top:20px;padding-top:18px;text-align:center}
-.cta img{width:190px;height:190px;object-fit:contain;background:#fff;border-radius:10px;margin:12px auto 8px;display:block}
-.cta .line{font-weight:600;color:#1A4D3E}
-.cta .sm{font-size:13px;color:#777;margin-top:6px}
-.tip{font-size:12.5px;color:#8a8a8a;margin-top:10px}
-footer{text-align:center;color:#9a9a9a;font-size:12.5px;padding:10px 0 34px}
-footer a{color:#1A4D3E}
-.again{display:inline-block;margin-top:14px;font-size:13.5px;color:#1A4D3E;text-decoration:underline;cursor:pointer;background:none;border:0}
+:root{--g:#123F33;--g2:#1A4D3E;--cream:#F7F4EC;--gold:#C0A16B;--ink:#22302B;--muted:#6b7671}
+*{box-sizing:border-box}
+body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.7 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif}
+.wrap{max-width:720px;margin:0 auto;padding:26px 20px 60px}
+header{text-align:center;padding:14px 0 6px}
+h1{font-size:23px;margin:6px 0 6px;color:var(--g);letter-spacing:.5px}
+.sub{color:var(--muted);font-size:14px;margin:0 0 18px}
+select{width:100%;padding:13px 14px;font-size:16px;border:1px solid #ddd6c6;border-radius:10px;background:#fff;color:var(--ink);appearance:none;
+  background-image:linear-gradient(45deg,transparent 50%,var(--g) 50%),linear-gradient(135deg,var(--g) 50%,transparent 50%);
+  background-position:calc(100% - 20px) 22px,calc(100% - 14px) 22px;background-size:6px 6px,6px 6px;background-repeat:no-repeat}
+.note{font-size:13px;color:var(--muted);margin:10px 2px 0}
+.bar{position:sticky;top:0;background:rgba(247,244,236,.95);backdrop-filter:blur(6px);padding:10px 0;z-index:5;display:flex;align-items:center;gap:10px;border-bottom:1px solid #e8e2d4;margin:18px 0 6px}
+.bar .p{flex:1;height:6px;background:#e6e0d0;border-radius:3px;overflow:hidden}
+.bar .p span{display:block;height:100%;width:0;background:var(--g);transition:width .3s}
+.bar b{color:var(--g);font-size:14px;white-space:nowrap}
+.q{background:#fff;border:1px solid #ece6d7;border-radius:12px;padding:16px 16px 8px;margin:12px 0;box-shadow:0 1px 2px rgba(0,0,0,.02)}
+.q h3{margin:0 0 10px;font-size:16px;font-weight:600;line-height:1.6}
+.q h3 i{color:var(--gold);font-style:normal;margin-right:6px}
+.opt{display:block;padding:11px 12px;margin:0 0 8px;border:1px solid #e6e0d0;border-radius:9px;cursor:pointer;font-size:15px;transition:.15s}
+.opt:hover{border-color:var(--gold);background:#fdfcf8}
+.opt.on{border-color:var(--g);background:#f2f7f4;color:var(--g);font-weight:600}
+.opt input{display:none}
+button#submit{width:100%;padding:15px;margin-top:14px;background:var(--g);color:#fff;border:0;border-radius:10px;font-size:16px;font-weight:600;cursor:pointer}
+button#submit:disabled{background:#c9cfcb;cursor:not-allowed}
+#result{background:#fff;border:1px solid #ece6d7;border-radius:12px;padding:20px;margin-top:16px}
+.score{font-size:44px;font-weight:700;color:var(--g);line-height:1}
+.score small{font-size:16px;color:var(--muted);font-weight:400}
+.band{display:inline-block;margin:10px 0 4px;padding:5px 12px;background:#f2f7f4;color:var(--g);border-radius:20px;font-weight:600;font-size:14px}
+.gaps{margin:14px 0 0;padding:0;list-style:none}
+.gaps li{padding:10px 0 10px 26px;position:relative;border-top:1px dashed #eee8da;font-size:15px}
+.gaps li:before{content:"→";position:absolute;left:0;color:var(--gold);font-weight:700}
+.cta{margin-top:18px;padding-top:16px;border-top:1px solid #eee8da;text-align:center}
+.cta img{width:180px;height:180px;border-radius:10px;margin:10px auto;display:block;background:#fff}
+.cta .ph{font-size:15px;color:var(--ink);margin-top:6px}
+.cta .ph b{color:var(--g)}
+.hint{font-size:13px;color:var(--muted);margin-top:8px}
+footer{text-align:center;color:var(--muted);font-size:13px;margin-top:26px}
+footer a{color:var(--g);text-decoration:none}
 </style>
 </head>
 <body>
 <div class="wrap">
   <header>
-    <div class="brand">壬辰合规 · RENCHEN CONSULTING</div>
     <h1>认证准备度自测</h1>
-    <p>15 题 · 约 2 分钟 · 看看你的工厂离证书还有多远</p>
+    <p class="sub">15 题、2 分钟 · 看看你的工厂离证书还有多远</p>
   </header>
 
-  <div class="tabs" id="tabs"></div>
+  <label class="note" for="std">选择你的标准类别</label>
+  <select id="std">
+    <option value="food">BRCGS 食品安全（食品加工）</option>
+    <option value="packaging">BRCGS 包装材料（Issue 7）</option>
+    <option value="consumer">BRCGS 消费品（CP）</option>
+    <option value="agents">BRCGS 经纪商 / 代理（A&amp;B）</option>
+    <option value="storage">BRCGS 仓储配送（S&amp;D）</option>
+    <option value="ifs-food">IFS 食品（IFS Food）</option>
+    <option value="ifs-packaging">IFS 包材（PACsecure）</option>
+    <option value="ifs-consumer">IFS 消费品（HPC）</option>
+    <option value="fssc">FSSC 22000</option>
+  </select>
+  <p class="note" id="stdNote"></p>
 
-  <div class="card" id="quiz">
-    <div id="qs"></div>
-    <div class="progress"><i id="pg"></i></div>
-    <button class="btn" id="submit" disabled>查看结果</button>
-    <p class="tip">全选完才能提交 · 本页不收集你的答题内容</p>
-  </div>
+  <div class="bar" id="bar" style="display:none"><b id="pct">0 / 15</b><div class="p"><span id="pbar"></span></div></div>
 
-  <div class="card" id="result"></div>
+  <form id="quiz"></form>
+  <button id="submit" disabled>请先回答全部 15 题</button>
+
+  <div id="result" style="display:none"></div>
 
   <footer>
-    壬辰合规 · BRCGS / IFS / FSSC 认证辅导 ·
-    <a href="/">返回官网</a><br>
-    © 2026 RenChen Consulting
+    壬辰合规 · BRCGS / IFS / FSSC 认证辅导<br>
+    <a href="https://renchen-compliance.com/">renchen-compliance.com</a>
   </footer>
 </div>
 
 <script>
-/* ============ 题库：10 题通用（60 分）+ 5 题标准特化（40 分） ============ */
+/* ============ 通用 10 题（60 分） ============ */
 const COMMON = [
-  {k:'exp', t:'目前是否有出口业务？', o:[['已出口',6],['计划中',3],['没有',0]]},
-  {k:'req', t:'海外客户是否明确提出需要 BRCGS / IFS / FSSC 认证？', o:[['明确要求',10],['提过',6],['不确定',3],['没有',0]]},
-  {k:'mkt', t:'主要出口市场', o:[['欧盟 / 英国',4],['北美',4],['东南亚',3],['中东',3],['其他',2],['还没确定',0]]},
-  {k:'cus', t:'主要客户类型', o:[['零售商',4],['品牌商',4],['贸易商',3],['餐饮 / 渠道',2],['其他',2]]},
-  {k:'haccp', t:'是否建立了 HACCP（危害分析与关键控制点）？', o:[['有且在有效期',10],['有但已过期',5],['没有',0]]},
-  {k:'iso', t:'是否已通过 ISO 22000 / ISO 9001 等体系认证？', o:[['有 2 个以上',6],['有 1 个',3],['没有',0]]},
-  {k:'audit', t:'是否有完整的内部审核 + 管理评审（每年至少 1 次）？', o:[['有且按计划执行',8],['有文件但没执行',4],['没有',0]]},
-  {k:'sup', t:'是否有供应商批准 / 评价体系，并做过追溯演练？', o:[['都有',8],['只有其中一项',4],['都没有',0]]},
-  {k:'third', t:'近两年是否经历过客户或第三方现场审核？', o:[['有',2],['没有',0]]},
-  {k:'inci', t:'近一年是否发生重大质量 / 食品安全事件？', o:[['没有',2],['有，已闭环',1],['有，未闭环',0]]}
+ {q:"产品主要销往哪里？",o:[["已出口",6],["计划出口",4],["只做国内",0]]},
+ {q:"客户有没有明确要求过国际标准认证？",o:[["明确要求",10],["提过但没强制",6],["不确定",3],["没有",0]]},
+ {q:"主要出口市场？",o:[["欧盟 / 英国",4],["北美",4],["东南亚",3],["中东",3],["其他",2],["还没定",0]]},
+ {q:"主要客户类型？",o:[["零售 / 品牌商",4],["贸易商",3],["餐饮及供应链",2],["其他",2]]},
+ {q:"有没有建立并运行 HACCP？",o:[["有，且在有效运行",10],["有文件但没真正执行",5],["没有",0]]},
+ {q:"是否已通过 ISO 22000 / 9001 或其他体系认证？",o:[["有两个以上",6],["有一个",3],["没有",0]]},
+ {q:"内部审核与管理评审？",o:[["每年执行且有记录",8],["有制度没执行",4],["没有",0]]},
+ {q:"供应商批准与追溯演练？",o:[["两项都有",8],["只有其中一项",4],["都没有",0]]},
+ {q:"近两年有没有接受过第三方或客户审核？",o:[["有",2],["没有",0]]},
+ {q:"近一年有没有发生重大质量或食品安全事件？",o:[["没有",2],["有，已闭环",1],["有，未闭环",0]]}
 ];
-
-const SPECIAL = {
-  food: {name:'BRCGS 食品', q:[
-    {k:'allergen', t:'过敏原管理：是否有清单、专区/专线控制与清线验证记录？', o:[['完整且可追溯',8],['有清单，控制一般',4],['没有做',0]]},
-    {k:'prp', t:'前提方案（PRP）：卫生、虫害、维保、人员卫生等文件是否齐全在执行？', o:[['齐全并执行',8],['文件有，执行不全',4],['缺乏',0]]},
-    {k:'design', t:'现场卫生设计：地面墙面易清洁、无积水死角、物流人流分开？', o:[['符合',8],['部分符合',4],['问题较多',0]]},
-    {k:'defense', t:'食品防护（TACCP）与人员出入管控是否落实？', o:[['有制度并执行',8],['有制度未执行',4],['没有',0]]},
-    {k:'release', t:'成品检测与放行、留样、检测项目是否覆盖客户要求？', o:[['覆盖并有记录',8],['部分覆盖',4],['没有系统做',0]]}
-  ]},
-  packaging: {name:'BRCGS 包材', q:[
-    {k:'contact', t:'产品接触材料是否符合 EU 10/2011 / FDA 等法规并有合规声明？', o:[['有完整声明',8],['部分有',4],['没有',0]]},
-    {k:'ink', t:'油墨 / 粘合剂 / 助剂是否有低迁移与合规文件？', o:[['齐全',8],['部分有',4],['没有',0]]},
-    {k:'foreign', t:'异物控制：金属探测 / 视觉检测 / 现场玻璃易碎品管理？', o:[['完备',8],['部分有',4],['没有',0]]},
-    {k:'print', t:'印刷与后道质量控制（套印、色差、条码、批次记录）？', o:[['有系统控制',8],['凭经验',4],['没有',0]]},
-    {k:'risk', t:'是否做过包装材料的危害分析与风险评估（含回收料）？', o:[['做过并更新',8],['做过一次',4],['没有',0]]}
-  ]},
-  consumer: {name:'BRCGS 消费品', q:[
-    {k:'psc', t:'产品安全与合规：是否有产品合规清单（GL / PCH 等）与责任人？', o:[['有且定期更新',8],['部分有',4],['没有',0]]},
-    {k:'test', t:'产品测试：按标准/客户要求送检并留存报告？', o:[['按期测试',8],['偶尔做',4],['没做',0]]},
-    {k:'spec', t:'设计与规格控制：图纸、规格书、变更控制是否受控？', o:[['受控且留痕',8],['有但不严',4],['没有',0]]},
-    {k:'recall', t:'可追溯与召回：能否 2 小时内完成一批次双向追溯？', o:[['能并演练过',8],['能但未演练',4],['做不到',0]]},
-    {k:'supply', t:'供应链合规：代工/外协厂的合规评估与文件？', o:[['有评估',8],['部分有',4],['没有',0]]}
-  ]},
-  ifs: {name:'IFS', q:[
-    {k:'ko', t:'是否了解 IFS 的 KO（关键项）与打分规则（A/B/C/D）？', o:[['很了解',8],['听说过',4],['不了解',0]]},
-    {k:'ca', t:'纠正措施系统：不符合项是否闭环并做根因分析？', o:[['系统闭环',8],['有记录不闭环',4],['没有',0]]},
-    {k:'authen', t:'产品真实性 / 防掺假（VACCP）：是否有原料风险与检测方案？', o:[['有方案',8],['部分有',4],['没有',0]]},
-    {k:'complaint', t:'投诉与召回系统：记录、趋势分析、召回演练？', o:[['完备',8],['只有记录',4],['没有',0]]},
-    {k:'ifs_audit', t:'年度内审是否覆盖 IFS 全部条款并做过差距分析？', o:[['覆盖并留记录',8],['部分',4],['没有',0]]}
-  ]},
-  fssc: {name:'FSSC 22000', q:[
-    {k:'iso22000', t:'是否已建立 ISO 22000 体系（FSSC 的必备基础）？', o:[['已认证',8],['在建',4],['没有',0]]},
-    {k:'prp2', t:'前提方案：是否按 ISO/TS 22002 系列建立并验证？', o:[['建立并验证',8],['部分',4],['没有',0]]},
-    {k:'fraud', t:'食品欺诈（VACCP）与食品防御（TACCP）是否都做了？', o:[['都做了',8],['做了一项',4],['都没做',0]]},
-    {k:'culture', t:'食品安全文化与培训：是否有年度培训计划与有效性评估？', o:[['有计划并评估',8],['有培训无评估',4],['没有',0]]},
-    {k:'extra', t:'FSSC 附加要求（如环境监控、设备管理、服务提供方）是否落实？', o:[['落实',8],['部分',4],['没有',0]]}
-  ]}
+/* ============ 各类专属 5 题（40 分，每题 8） ============ */
+const SPECIFIC = {
+ food:[
+  {q:"HACCP 计划的验证与确认",o:[["每年验证并有记录",8],["建立后没再验证",4],["没有 HACCP",0]]},
+  {q:"过敏原管理",o:[["交叉污染防控 + 标识管理都有",8],["只有标识",4],["没有系统管理",0]]},
+  {q:"前提方案（卫生设计 / 清洁 / 虫害）",o:[["三项都成体系",8],["零散执行",4],["基本没有",0]]},
+  {q:"食品防护与食品欺诈（TACCP / VACCP）",o:[["都做过风险评估",8],["听说过没做",3],["没听说",0]]},
+  {q:"原料供应商的批准与风险分级",o:[["有程序并分级评价",8],["只收证照",4],["没有",0]]}],
+ packaging:[
+  {q:"产品接触材料的合规证据",o:[["全部有符合性声明",8],["部分有",4],["没有",0]]},
+  {q:"印刷 / 复合的迁移风险评估（油墨、粘合剂）",o:[["有评估并做过检测",8],["只有供应商声明",4],["没有",0]]},
+  {q:"异物控制（裁切、粉尘、金属）",o:[["有完整控制与检测",8],["只有部分",4],["没有",0]]},
+  {q:"包材 HACCP / 产品安全风险分析",o:[["有且覆盖工艺",8],["有但不完整",4],["没有",0]]},
+  {q:"回收料 / 再生料的使用与控制",o:[["不用",8],["用且有声明与控制",6],["用但没管控",0]]}],
+ consumer:[
+  {q:"产品安全与合规分类（GL / PCH 判定）",o:[["已明确分类并落地",8],["大概知道",4],["不清楚",0]]},
+  {q:"产品测试与验证（第三方检测）",o:[["按标准做全项目",8],["只做部分",4],["没有",0]]},
+  {q:"设计与规格控制、变更管理",o:[["有规格书 + 变更审批",8],["有规格书",4],["没有",0]]},
+  {q:"供应链与 OEM / 代工管理",o:[["有批准并定期评估",8],["只收资质",4],["没有",0]]},
+  {q:"可追溯与召回（含客户通知流程）",o:[["有演练记录",8],["有制度没演练",4],["没有",0]]}],
+ agents:[
+  {q:"产品规格与合规确认（产品由他厂生产）",o:[["每批有规格与合规确认",8],["部分有",4],["没有",0]]},
+  {q:"生产厂（供应商）的批准与评估",o:[["有现场评估或等效证据",8],["只看证书",4],["没有",0]]},
+  {q:"追溯与批量管理（贸易链）",o:[["4 小时内能追到批次",8],["有记录但不完整",4],["做不到",0]]},
+  {q:"文件与记录体系（贸易商自身）",o:[["完整且有版本控制",8],["零散",4],["没有",0]]},
+  {q:"客户投诉与召回协调（与生产厂联动）",o:[["有流程并演练过",8],["有流程没演练",4],["没有",0]]}],
+ storage:[
+  {q:"仓储条件与温湿度控制",o:[["有监控并记录",8],["有设备无记录",4],["没有",0]]},
+  {q:"产品隔离与交叉污染防控（过敏原 / 化学品）",o:[["分区 + 物理隔离",8],["只分区",4],["没有",0]]},
+  {q:"虫害控制与设施卫生",o:[["第三方 PCO 并留记录",8],["自己做",4],["没有",0]]},
+  {q:"出入库、批次与可追溯",o:[["系统化追溯",8],["纸质台账",4],["没有",0]]},
+  {q:"运输车辆与冷链验证",o:[["有验证与清洗记录",8],["只有部分",4],["没有",0]]}],
+ "ifs-food":[
+  {q:"对 IFS 打分与 KO 关键项的认知",o:[["清楚 KO 项及其后果",8],["听说过",4],["不了解",0]]},
+  {q:"纠正措施系统（CAR）",o:[["有闭环流程与根因分析",8],["只做整改",4],["没有",0]]},
+  {q:"产品真实性与掺假（Food Fraud）",o:[["做过评估并有措施",8],["听说过",3],["没有",0]]},
+  {q:"投诉处理与召回（时效要求）",o:[["有流程并演练",8],["有流程",4],["没有",0]]},
+  {q:"年度内审与 IFS 评分逻辑",o:[["覆盖 IFS 全部条款",8],["常规内审",4],["没有",0]]}],
+ "ifs-packaging":[
+  {q:"产品接触合规与声明管理",o:[["完整",8],["部分",4],["没有",0]]},
+  {q:"PACsecure 要求的风险分析",o:[["按标准做过",8],["只做常规 HACCP",4],["没有",0]]},
+  {q:"印刷 / 复合工艺控制（迁移、残留溶剂）",o:[["有控制并检测",8],["只有参数记录",4],["没有",0]]},
+  {q:"卫生与异物控制",o:[["成体系",8],["零散",4],["没有",0]]},
+  {q:"追溯与产品撤回（含客户通知）",o:[["有演练",8],["有制度",4],["没有",0]]}],
+ "ifs-consumer":[
+  {q:"产品法规符合性（HPC 分类与法规）",o:[["明确且可举证",8],["部分",4],["不清楚",0]]},
+  {q:"产品测试与稳定性 / 相容性",o:[["按品类做全",8],["部分",4],["没有",0]]},
+  {q:"设计与开发控制",o:[["有设计与评审流程",8],["有但不完整",4],["没有",0]]},
+  {q:"供应商与外包（含代工）管理",o:[["有批准与评估",8],["只看资质",4],["没有",0]]},
+  {q:"投诉与撤回机制",o:[["有流程并演练",8],["有流程",4],["没有",0]]}],
+ fssc:[
+  {q:"ISO 22000 基础（前提方案 + OPRP / HACCP）",o:[["按 ISO 22000 建立并运行",8],["只做 HACCP",4],["没有",0]]},
+  {q:"FSSC 附加前提方案（PPs：设备管理、服务方等）",o:[["覆盖齐全",8],["部分",4],["没有",0]]},
+  {q:"食品防御（Food Defense）与生物监测",o:[["都做",8],["只做其一",4],["没有",0]]},
+  {q:"食品欺诈与产品真实性",o:[["有评估与措施",8],["听说过",3],["没有",0]]},
+  {q:"环境监控与 FSSC 附加要求",o:[["有方案并留记录",8],["部分",4],["不需要 / 没有",0]]}]
 };
+const NAMES={food:"BRCGS 食品安全",packaging:"BRCGS 包装材料",consumer:"BRCGS 消费品",agents:"BRCGS 经纪商 / 代理",storage:"BRCGS 仓储配送","ifs-food":"IFS 食品","ifs-packaging":"IFS 包材（PACsecure）","ifs-consumer":"IFS 消费品（HPC）",fssc:"FSSC 22000"};
+const ACT={food:"HACCP 验证、过敏原管理、前提方案",packaging:"接触材料符合性声明、迁移风险评估、异物控制",consumer:"产品安全分类、第三方测试、变更管理",agents:"供应商批准、贸易链追溯、文件体系",storage:"温湿度监控、隔离防交叉污染、追溯台账","ifs-food":"KO 关键项、纠正措施闭环、产品真实性","ifs-packaging":"产品接触合规、PACsecure 风险分析、工艺控制","ifs-consumer":"法规符合性、产品测试、供应商管理",fssc:"ISO 22000 基础、PPs 全覆盖、食品防御与欺诈"};
 
-const BANDS = [
-  {min:80, band:'可安排审核', say:'条件比较成熟，确认认证范围与标准后就可以推进审核安排。'},
-  {min:60, band:'接近可审', say:'主体条件具备，针对缺口做专项补强后建议安排一次预审。'},
-  {min:40, band:'起步期', say:'已有部分基础，但关键项（文件 / 内审 / 供应商 / 追溯）缺口明显。'},
-  {min:0,  band:'未起步', say:'体系基础还比较薄弱，建议先打基础再安排认证，能少走很多弯路。'}
-];
+let std = new URLSearchParams(location.search).get('std') || 'food';
+if(!SPECIFIC[std]) std='food';
+let ans = {};
 
-const GAPMAP = {
-  haccp:'体系与文件：先建立/更新 HACCP 与前提方案（PRP），并保证记录在实际执行。',
-  iso:'体系与文件：ISO 22000 / 9001 是多数标准的基础，建议先梳理体系框架。',
-  audit:'内审与管理评审：补内审计划、检查表、不符合项闭环与管理评审记录。',
-  sup:'供应商与追溯：建立供方名录与评价记录、原辅料 COA，做一次完整追溯演练。',
-  third:'现场与过程控制：主动安排一次模拟审核，把现场与记录问题提前暴露。',
-  inci:'事件闭环：把未闭环的质量/食品安全事件做完根因分析与纠正措施。',
-  req:'认证范围：先与客户确认标准（Food / Packaging / CP）与认证范围，再定方案。',
-  mkt:'市场要求：明确目标市场的准入要求，避免做错标准。',
-  allergen:'过敏原：做清单 + 专区专线 + 清线验证记录，这是审核高频失分点。',
-  prp:'前提方案：卫生、虫害、维保、人员卫生四项要文件+执行一起过关。',
-  design:'现场卫生设计：地面墙面、排水、人流物流分开，改造建议提前排期。',
-  defense:'食品防护：补人员出入管控与 TACCP 制度。',
-  release:'成品放行：检测项目、留样、放行记录要覆盖客户与标准要求。',
-  contact:'接触材料合规：整理 EU/FDA 合规声明与原料迁移数据。',
-  ink:'油墨与粘合剂：补齐低迁移与合规文件，这是包材审核重点。',
-  foreign:'异物控制：金属探测/视觉检测 + 易碎品管理，审核必查。',
-  print:'印刷质量控制：套印、色差、条码、批次记录做成可追溯的系统。',
-  risk:'包装风险评估：做一次含回收料的危害分析并每年更新。',
-  psc:'产品合规：建立产品合规清单（GL/PCH）与责任人。',
-  test:'产品测试：按客户与标准要求定期送检并归档报告。',
-  spec:'设计与规格：图纸规格受控、变更留痕。',
-  recall:'追溯与召回：做到 2 小时内双向追溯并演练。',
-  supply:'供应链合规：对代工/外协做合规评估。',
-  ko:'IFS 规则：先弄清 KO 关键项与评分逻辑，再按条款做差距分析。',
-  ca:'纠正措施：不符合项要闭环 + 根因分析。',
-  authen:'产品真实性：建立原料风险清单与检测方案。',
-  complaint:'投诉与召回：记录 + 趋势分析 + 召回演练。',
-  ifs_audit:'IFS 内审：覆盖全部条款并留痕。',
-  iso22000:'ISO 22000：这是 FSSC 的必备基础，未建先建。',
-  prp2:'前提方案：按 ISO/TS 22002 建立并验证。',
-  fraud:'食品欺诈与防御：VACCP 与 TACCP 都要做。',
-  culture:'食品安全文化：年度培训计划 + 有效性评估。',
-  extra:'FSSC 附加要求：环境监控、设备管理、服务提供方控制。'
-};
+const $=s=>document.querySelector(s);
+const sel=$('#std'), quiz=$('#quiz');
 
-let cur = 'food', ans = {};
-
-/* ---------- UI ---------- */
-function renderTabs(){
-  document.getElementById('tabs').innerHTML = Object.keys(SPECIAL)
-    .map(k => '<div class="tab' + (k===cur?' on':'') + '" data-k="' + k + '">' + SPECIAL[k].name + '</div>').join('');
-  document.querySelectorAll('.tab').forEach(t => t.onclick = () => {
-    cur = t.dataset.k; ans = {}; renderTabs(); renderQ();
-    document.getElementById('result').style.display = 'none';
-    document.getElementById('quiz').style.display = 'block';
-  });
+function render(){
+  ans={};
+  const items=COMMON.concat(SPECIFIC[std]);
+  $('#stdNote').textContent = NAMES[std] + '：共 15 题，测完给出最需要补的三项。';
+  quiz.innerHTML = items.map((it,i)=>{
+    const opts=it.o.map((o,j)=>`<label class="opt" data-i="${i}" data-j="${j}"><input type="radio" name="q${i}">${o[0]}</label>`).join('');
+    return `<div class="q"><h3><i>${i+1}</i>${it.q}</h3>${opts}</div>`;
+  }).join('');
+  quiz.querySelectorAll('.opt').forEach(el=>el.addEventListener('click',()=>{
+    const i=el.dataset.i;
+    quiz.querySelectorAll(`.opt[data-i="${i}"]`).forEach(x=>x.classList.remove('on'));
+    el.classList.add('on'); ans[i]=+el.dataset.j; upd();
+  }));
+  $('#bar').style.display='flex'; $('#result').style.display='none';
+  upd();
 }
-function renderQ(){
-  const list = COMMON.concat(SPECIAL[cur].q);
-  document.getElementById('qs').innerHTML = list.map((q, i) =>
-    '<div class="q"><div class="t"><i>' + (i+1) + '.</i>' + q.t + '</div><div class="opts">' +
-    q.o.map((o, j) => '<div class="opt' + (ans[q.k]===j?' on':'') + '" data-k="' + q.k + '" data-j="' + j + '">' + o[0] + '</div>').join('') +
-    '</div></div>').join('');
-  document.querySelectorAll('.opt').forEach(o => o.onclick = () => {
-    ans[o.dataset.k] = +o.dataset.j; renderQ();
-  });
-  const n = Object.keys(ans).length, tot = list.length;
-  document.getElementById('pg').style.width = Math.round(n * 100 / tot) + '%';
-  const b = document.getElementById('submit');
-  b.disabled = n < tot;
-  b.textContent = n < tot ? ('还剩 ' + (tot - n) + ' 题 ▸ 查看结果') : '查看结果';
+function upd(){
+  const n=Object.keys(ans).length;
+  $('#pct').textContent = n+' / 15';
+  $('#pbar').style.width = (n/15*100)+'%';
+  const b=$('#submit');
+  if(n===15){ b.disabled=false; b.textContent='查看结果'; } else { b.disabled=true; b.textContent=`还剩 ${15-n} 题`;
+    b.textContent = n===0 ? '请先回答全部 15 题' : `还剩 ${15-n} 题 ▸ 查看结果`; }
 }
-
-function submit(){
-  const list = COMMON.concat(SPECIAL[cur].q);
-  let got = 0, low = [];
-  list.forEach(q => {
-    const j = ans[q.k];
-    if (j === undefined) return;
-    got += q.o[j][1];
-    const max = Math.max.apply(null, q.o.map(x => x[1]));
-    if (q.o[j][1] < max * 0.7) low.push({k:q.k, gap:max - q.o[j][1]});
+$('#submit').addEventListener('click',()=>{
+  const items=COMMON.concat(SPECIFIC[std]);
+  let total=0, max=0, lost=[];
+  items.forEach((it,i)=>{
+    const pts = it.o[ans[i]] ? it.o[ans[i]][1] : 0;
+    const mx = Math.max(...it.o.map(o=>o[1]));
+    total+=pts; max+=mx;
+    lost.push({i, q:it.q, gap:mx-pts, act:(it.o[ans[i]]?it.o[ans[i]][0]:'-')});
   });
-  low.sort((a,b) => b.gap - a.gap);
-  const band = BANDS.find(b => got >= b.min);
-  const gaps = low.slice(0, 3).map(x => GAPMAP[x.k] || '').filter(Boolean);
-  document.getElementById('result').innerHTML =
-    '<div class="score"><div class="n">' + got + '<small> / 100</small></div>' +
-    '<div class="band">' + band.band + '</div><div class="say">' + band.say + '</div></div>' +
-    '<div class="gaps"><h3>最需要补的三项</h3>' +
-    (gaps.length ? gaps.map((g,i) => '<div class="gap"><b>' + (i+1) + '.</b> ' + g + '</div>').join('')
-                 : '<div class="gap">整体条件不错，建议做一次模拟审核挑细节。</div>') +
-    '</div><div class="cta"><h3>需要我帮你看一下差距？</h3>' +
-    '<img src="/images/wxwork-qr.png" alt="企业微信二维码">' +
-    '<div class="line">扫码添加，获取自测标准类目</div>' +
-    '<div class="sm">手机号码：13616196518</div>' +
-    '<div class="sm">把上面的分数发我，我给你一份针对性的准备清单</div>' +
-    '<button class="again" onclick="location.reload()">重新测一次</button></div>';
-  document.getElementById('quiz').style.display = 'none';
-  document.getElementById('result').style.display = 'block';
-  document.getElementById('result').scrollIntoView({behavior:'smooth', block:'start'});
-}
-document.getElementById('submit').onclick = submit;
-renderTabs(); renderQ();
+  const score = Math.round(total/max*100);
+  const band = score>=80?['可安排审核','条件比较成熟，确认认证范围与标准后即可推进审核安排。']
+    : score>=60?['接近可审','基础已经有了，补齐失分最高的三项就可以安排预审。']
+    : score>=40?['准备期','体系要素还不全，建议先做差距分析，再做文件与现场整改。']
+    : ['起步期','建议先把基础体系搭起来（HACCP / 前提方案 + 关键人员培训）。'];
+  const top = lost.filter(x=>x.gap>0).sort((a,b)=>b.gap-a.gap).slice(0,3);
+  const gaps = top.length ? top.map(x=>`<li><b>${x.q}</b>：${x.act} → 需要补强（${ACT[std] ? '本类重点关注 ' + ACT[std] : ''}）</li>`).join('')
+    : '<li>没有明显短板，可以准备认证审核了。</li>';
+  $('#result').style.display='block';
+  $('#result').innerHTML = `
+    <div class="score">${score}<small> / 100</small></div>
+    <div class="band">${band[0]}</div>
+    <p style="margin:8px 0 0;color:#4b5751">${NAMES[std]} · ${band[1]}</p>
+    <p style="margin:14px 0 4px;font-weight:600">最需要补的三项</p>
+    <ul class="gaps">${gaps}</ul>
+    <div class="cta">
+      <p style="font-weight:600;margin:0">把分数发我，给你一份针对性清单</p>
+      <p class="ph">手机号码：<b>13616196518</b></p>
+      <p class="hint">加企业微信后把自测分数发我，我按你的差距给一份准备清单</p>
+    </div>
+    <p class="hint" style="text-align:center;margin-top:14px">本结果用于初步判断，最终以现场审核为准</p>`;
+  $('#result').scrollIntoView({behavior:'smooth',block:'start'});
+});
+sel.value = std;
+sel.addEventListener('change',()=>{
+  std = sel.value;
+  history.replaceState(null,'','?std='+std);
+  render();
+});
+render();
 </script>
 </body>
 </html>
