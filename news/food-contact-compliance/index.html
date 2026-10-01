@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>食品接触材料合规：迁移测试、符合性声明与原料链（工厂实操版） - 壬辰合规</title>
+<meta name="description" content="包材与普通产品最大的区别：产品直接接触食品。迁移测试、符合性声明、原料 COA 该怎么做，工厂实操版。">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://renchen-compliance.com/news/food-contact-compliance/">
+<style>
+  :root{ --green:#1a4d3e; --ink:#2b2b2b; --soft:#f7f6f2; --line:#e6e3db; --muted:#777; }
+  *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+  body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+       background:#fff;color:var(--ink);line-height:1.75;}
+  .wrap{max-width:840px;margin:0 auto;padding:0 20px;}
+  a{color:inherit;text-decoration:none}
+  p a,li a,td a{color:var(--green);border-bottom:1px solid rgba(26,77,62,.35)}
+  header{position:sticky;top:0;background:rgba(255,255,255,.95);backdrop-filter:blur(6px);
+         border-bottom:1px solid var(--line);z-index:10;}
+  .nav{display:flex;justify-content:space-between;align-items:center;height:60px;max-width:1080px;margin:0 auto;padding:0 20px;}
+  .brand{font-size:19px;font-weight:700;letter-spacing:1px;color:var(--ink);}
+  .brand small{font-size:12px;color:var(--muted);font-weight:400;margin-left:8px;letter-spacing:2px;}
+  .menu{display:flex;gap:20px;font-size:14px;color:#555;flex-wrap:wrap;}
+  .menu a:hover{color:var(--green);}
+  @font-face{font-family:"RCSerif";src:url("/fonts/NotoSerifSC-Bold.woff2") format("woff2");font-weight:700;font-display:swap}
+  h1,h2,h3,h1 *,h2 *,h3 *{font-family:"RCSerif","Noto Serif SC","Songti SC","SimSun",serif;letter-spacing:.4px}
+  footer{border-top:1px solid var(--line);margin-top:56px;padding:28px 20px;text-align:center;
+         font-size:13px;color:var(--muted);line-height:2;}
+  footer a{color:var(--green)}
+
+  .head{padding:44px 0 22px;border-bottom:1px solid var(--line);}
+  .head .crumb{font-size:13px;color:var(--muted);margin-bottom:14px;}
+  .head h1{font-size:28px;line-height:1.45;}
+  .head .meta{margin-top:14px;font-size:13px;color:var(--muted);display:flex;gap:14px;flex-wrap:wrap;}
+  .head .tag{background:var(--soft);border:1px solid var(--line);border-radius:3px;padding:1px 8px;font-size:12px;color:var(--green);}
+  .article{padding:30px 0 10px;font-size:16.5px;}
+  .article p{margin:0 0 18px;color:#3a3a3a;text-align:justify;}
+  .article h3{font-size:19px;margin:30px 0 14px;color:var(--green);}
+  .article ul,.article ol{margin:0 0 18px 22px;}
+  .article li{margin-bottom:8px;color:#3a3a3a;}
+  .article strong{color:#1f1f1f;}
+  .article hr{border:0;border-top:1px solid var(--line);margin:28px 0;}
+  .article table{width:100%;border-collapse:collapse;margin:0 0 20px;font-size:15px;}
+  .article th,.article td{border:1px solid var(--line);padding:9px 12px;text-align:left;vertical-align:top;}
+  .article th{background:var(--soft);color:var(--green);font-weight:600;white-space:nowrap;}
+  .cta{margin:36px 0 0;padding:22px;background:var(--soft);border:1px solid var(--line);border-radius:4px;
+       display:flex;gap:22px;align-items:center;}
+  .cta img{width:104px;height:104px;background:#fff;padding:4px;border:1px solid var(--line);}
+  .cta .t{font-weight:600;margin-bottom:6px;}
+  .cta .d{font-size:14px;color:#555;line-height:1.9;}
+  .more{display:inline-block;margin-top:26px;color:var(--green);font-weight:600;}
+
+  /* ── 阅读保护（防随手复制/下载；水印用于溯源） ── */
+  .article,.article *{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;
+    -webkit-touch-callout:none;-webkit-user-drag:none}
+  .article img{pointer-events:none;-webkit-user-drag:none;user-drag:none}
+  #wm{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.05;
+      background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22340%22%20height%3D%22150%22%3E%3Ctext%20x%3D%228%22%20y%3D%2286%22%20font-size%3D%2214%22%20fill%3D%22%231a4d3e%22%20font-family%3D%22sans-serif%22%20transform%3D%22rotate%28-22%20170%2075%29%22%3E%E5%A3%AC%E8%BE%B0%E5%90%88%E8%A7%84%20%C2%B7%20renchen-compliance.com%3C/text%3E%3C/svg%3E");background-repeat:repeat}
+  .article{position:relative;z-index:1}
+  @media print{
+    body{background:#fff}
+    #wm{opacity:.16;position:fixed}
+    .article::after{content:"本文来自 renchen-compliance.com，未经授权不得转载或用于商业用途";
+      display:block;margin-top:24px;padding-top:12px;border-top:1px solid #ccc;font-size:12px;color:#888}
+    header,footer,.cta{display:none!important}
+  }
+</style>
+</head>
+<body>
+<div id="wm"></div>
+<header><div class="nav"><a class="brand" href="/">壬辰合规<small>RENCHEN CONSULTING</small></a><nav class="menu">
+      <a href="/">首页</a>
+      <a href="/#services">服务</a>
+      <a href="/assessment/">免费自测</a>
+      <a href="/check/food.html">自查清单</a>
+      <a href="/news/">讯息中心</a>
+      <a href="/#faq">常见问题</a>
+      <a href="/#contact">联系</a>
+    </nav></div></header>
+<main class="wrap">
+  <div class="head">
+    <div class="crumb"><a href="/">首页</a> ／ <a href="/news/">讯息中心</a></div>
+    <h1>食品接触材料合规：迁移测试、符合性声明与原料链（工厂实操版）</h1>
+    <div class="meta"><span>2026-10-01</span><span class="tag">包装材料</span><span class="tag">食品接触材料</span><span class="tag">合规</span></div>
+  </div>
+  <article class="article">
+<p>包装材料厂的食品安全，本质上是<strong>食品接触材料（FCM）合规</strong>问题。客户（食品品牌商）需要向他的客户和监管机构证明：这层包装是安全的。</p>
+<p>证明链条分三段，缺一不可。</p>
+<p><strong>第一段：原料合规（COA + 原料声明）</strong></p>
+<p>每一种原料（树脂、纸基、油墨、胶粘剂、涂层）都需要：
+- 供应商的合格证明（COA）
+- 原料层面的法规符合性声明（如树脂符合 EU 10/2011 附录 I）
+- 如涉及回收料：来源与合规性说明（欧盟对食品接触回收塑料有专门法规）</p>
+<p><strong>常见问题</strong>：工厂只盯着成品检测，忽略原料链。审核时一句"这个油墨的合规文件在哪？"就能暴露体系缺口。</p>
+<p><strong>第二段：过程控制</strong></p>
+<ul>
+<li>配方管理：任何变更（换原料、换供应商、调比例）都要评估对合规性的影响</li>
+<li>交叉污染控制：食品级与非食品级材料不得混线（或需彻底清洁验证）</li>
+<li>印刷与复合：油墨、胶粘剂的选用与固化控制，避免有害物迁移</li>
+</ul>
+<p><strong>第三段：成品证明</strong></p>
+<table>
+<thead>
+<tr>
+<th>文件</th>
+<th>内容</th>
+<th>注意</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>迁移测试报告</td>
+<td>总迁移（OML）、特定迁移（SML）</td>
+<td>按材质与实际使用条件测试；配方/工艺变更需重测</td>
+</tr>
+<tr>
+<td>符合性声明（DoC）</td>
+<td>声明符合的法规、适用条件</td>
+<td>使用条件必须与实际相符</td>
+</tr>
+<tr>
+<td>定期检测</td>
+<td>年度/批次检测记录</td>
+<td>客户与审核都会查周期</td>
+</tr>
+</tbody>
+</table>
+<p><strong>法规对照（常用三套）</strong></p>
+<ul>
+<li><strong>欧盟</strong>：EU 10/2011（塑料）、EU 1935/2004（框架法规）——多数出口欧洲客户强制要求</li>
+<li><strong>美国</strong>：FDA 21 CFR 174–190（间接添加剂）——出口北美参考</li>
+<li><strong>中国</strong>：GB 4806 系列——国内销售强制</li>
+</ul>
+<p><strong>体系认证的价值</strong></p>
+<p>IFS PACsecure 与 BRCGS PM 都会从三个维度审这条链：
+1. <strong>文件</strong>：规格书、DoC、检测报告的完整性与有效性
+2. <strong>记录</strong>：批次追溯、检验记录、变更记录
+3. <strong>现场</strong>：隔离、标识、清洁、防混料</p>
+<p>换句话说：<strong>认证通过 = 你的合规链条经得起第三方逐段核查。</strong></p>
+<p><strong>工具</strong>：我们整理了《IFS 包材体系自查清单》（90 项）与《BRCGS 包材自查清单》（114 项），可先自查合规链的断点。</p>
+    <div class="cta">
+      <img src="/images/wxwork-qr.png" alt="企业微信二维码">
+      <div>
+        <div class="t">需要针对自己工厂的判断？</div>
+        <div class="d">扫码加企业微信，或邮件 liting@renchen-compliance.com<br>可先做一次免费自测：<a href="/assessment/">renchen-compliance.com/assessment/</a></div>
+      </div>
+    </div>
+  </article>
+</main>
+<footer>
+  <div>壬辰合规 RENCHEN CONSULTING · 国际标准体系咨询（BRCGS / IFS / FSSC 22000）</div>
+  <div><a href="/">返回首页</a> · <a href="/news/">更多文章</a> · <a href="/assessment/">免费自测</a></div>
+  <div>© 2026 RenChen Consulting</div>
+</footer>
+
+<script>
+(function(){
+  // 禁选中 / 禁右键 / 禁复制剪切 / 禁常用快捷键 / 禁拖拽
+  document.addEventListener('selectstart', function(e){
+    if(e.target.closest && e.target.closest('.article')) e.preventDefault();
+  });
+  document.addEventListener('contextmenu', function(e){ e.preventDefault(); });
+  document.addEventListener('copy', function(e){
+    e.preventDefault();
+    if(e.clipboardData) e.clipboardData.setData('text/plain','本文来自 renchen-compliance.com，未经授权不得转载。');
+  });
+  document.addEventListener('cut', function(e){ e.preventDefault(); });
+  document.addEventListener('dragstart', function(e){ e.preventDefault(); });
+  document.addEventListener('keydown', function(e){
+    var k=(e.key||'').toLowerCase();
+    if((e.ctrlKey||e.metaKey)&&['c','x','u','s','p','a'].indexOf(k)>-1){ e.preventDefault(); }
+    if(k==='f12'){ e.preventDefault(); }
+  });
+})();
+</script>
+
+</body>
+</html>

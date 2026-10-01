@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BRCGS 包材认证：工厂最容易踩的 5 个坑（附自查方法） - 壬辰合规</title>
+<meta name="description" content="包材厂做 BRCGS 认证，卡住的地方高度集中。拆开讲最高频的 5 类问题，每类附可落地的自查方法。">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://renchen-compliance.com/news/brcgs-packaging-5-traps/">
+<style>
+  :root{ --green:#1a4d3e; --ink:#2b2b2b; --soft:#f7f6f2; --line:#e6e3db; --muted:#777; }
+  *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+  body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+       background:#fff;color:var(--ink);line-height:1.75;}
+  .wrap{max-width:840px;margin:0 auto;padding:0 20px;}
+  a{color:inherit;text-decoration:none}
+  p a,li a,td a{color:var(--green);border-bottom:1px solid rgba(26,77,62,.35)}
+  header{position:sticky;top:0;background:rgba(255,255,255,.95);backdrop-filter:blur(6px);
+         border-bottom:1px solid var(--line);z-index:10;}
+  .nav{display:flex;justify-content:space-between;align-items:center;height:60px;max-width:1080px;margin:0 auto;padding:0 20px;}
+  .brand{font-size:19px;font-weight:700;letter-spacing:1px;color:var(--ink);}
+  .brand small{font-size:12px;color:var(--muted);font-weight:400;margin-left:8px;letter-spacing:2px;}
+  .menu{display:flex;gap:20px;font-size:14px;color:#555;flex-wrap:wrap;}
+  .menu a:hover{color:var(--green);}
+  @font-face{font-family:"RCSerif";src:url("/fonts/NotoSerifSC-Bold.woff2") format("woff2");font-weight:700;font-display:swap}
+  h1,h2,h3,h1 *,h2 *,h3 *{font-family:"RCSerif","Noto Serif SC","Songti SC","SimSun",serif;letter-spacing:.4px}
+  footer{border-top:1px solid var(--line);margin-top:56px;padding:28px 20px;text-align:center;
+         font-size:13px;color:var(--muted);line-height:2;}
+  footer a{color:var(--green)}
+
+  .head{padding:44px 0 22px;border-bottom:1px solid var(--line);}
+  .head .crumb{font-size:13px;color:var(--muted);margin-bottom:14px;}
+  .head h1{font-size:28px;line-height:1.45;}
+  .head .meta{margin-top:14px;font-size:13px;color:var(--muted);display:flex;gap:14px;flex-wrap:wrap;}
+  .head .tag{background:var(--soft);border:1px solid var(--line);border-radius:3px;padding:1px 8px;font-size:12px;color:var(--green);}
+  .article{padding:30px 0 10px;font-size:16.5px;}
+  .article p{margin:0 0 18px;color:#3a3a3a;text-align:justify;}
+  .article h3{font-size:19px;margin:30px 0 14px;color:var(--green);}
+  .article ul,.article ol{margin:0 0 18px 22px;}
+  .article li{margin-bottom:8px;color:#3a3a3a;}
+  .article strong{color:#1f1f1f;}
+  .article hr{border:0;border-top:1px solid var(--line);margin:28px 0;}
+  .article table{width:100%;border-collapse:collapse;margin:0 0 20px;font-size:15px;}
+  .article th,.article td{border:1px solid var(--line);padding:9px 12px;text-align:left;vertical-align:top;}
+  .article th{background:var(--soft);color:var(--green);font-weight:600;white-space:nowrap;}
+  .cta{margin:36px 0 0;padding:22px;background:var(--soft);border:1px solid var(--line);border-radius:4px;
+       display:flex;gap:22px;align-items:center;}
+  .cta img{width:104px;height:104px;background:#fff;padding:4px;border:1px solid var(--line);}
+  .cta .t{font-weight:600;margin-bottom:6px;}
+  .cta .d{font-size:14px;color:#555;line-height:1.9;}
+  .more{display:inline-block;margin-top:26px;color:var(--green);font-weight:600;}
+
+  /* ── 阅读保护（防随手复制/下载；水印用于溯源） ── */
+  .article,.article *{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;
+    -webkit-touch-callout:none;-webkit-user-drag:none}
+  .article img{pointer-events:none;-webkit-user-drag:none;user-drag:none}
+  #wm{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.05;
+      background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22340%22%20height%3D%22150%22%3E%3Ctext%20x%3D%228%22%20y%3D%2286%22%20font-size%3D%2214%22%20fill%3D%22%231a4d3e%22%20font-family%3D%22sans-serif%22%20transform%3D%22rotate%28-22%20170%2075%29%22%3E%E5%A3%AC%E8%BE%B0%E5%90%88%E8%A7%84%20%C2%B7%20renchen-compliance.com%3C/text%3E%3C/svg%3E");background-repeat:repeat}
+  .article{position:relative;z-index:1}
+  @media print{
+    body{background:#fff}
+    #wm{opacity:.16;position:fixed}
+    .article::after{content:"本文来自 renchen-compliance.com，未经授权不得转载或用于商业用途";
+      display:block;margin-top:24px;padding-top:12px;border-top:1px solid #ccc;font-size:12px;color:#888}
+    header,footer,.cta{display:none!important}
+  }
+</style>
+</head>
+<body>
+<div id="wm"></div>
+<header><div class="nav"><a class="brand" href="/">壬辰合规<small>RENCHEN CONSULTING</small></a><nav class="menu">
+      <a href="/">首页</a>
+      <a href="/#services">服务</a>
+      <a href="/assessment/">免费自测</a>
+      <a href="/check/food.html">自查清单</a>
+      <a href="/news/">讯息中心</a>
+      <a href="/#faq">常见问题</a>
+      <a href="/#contact">联系</a>
+    </nav></div></header>
+<main class="wrap">
+  <div class="head">
+    <div class="crumb"><a href="/">首页</a> ／ <a href="/news/">讯息中心</a></div>
+    <h1>BRCGS 包材认证：工厂最容易踩的 5 个坑（附自查方法）</h1>
+    <div class="meta"><span>2026-09-30</span><span class="tag">BRCGS</span><span class="tag">包装材料</span><span class="tag">自查</span></div>
+  </div>
+  <article class="article">
+<p>接触过上百家出口包装材料企业，从初审到复审，工厂卡住的地方其实高度集中。把最高频的 5 类问题拆开讲，每一类都给出可落地的自查方法。</p>
+<p><strong>一、员工设施：不是"有"，而是"合规"</strong></p>
+<p>BRCGS 对员工设施的权重极高（更衣室、洗手设施、卫生间三项往往占数十分）。常见误区：</p>
+<ul>
+<li>更衣室设在生产区内侧，员工必须穿过生产区才能更衣 → 不符合</li>
+<li>洗手设施只有水龙头，没有干手、消毒、无香皂 → 不符合</li>
+<li>卫生间门直通生产区 → 不符合</li>
+</ul>
+<p><strong>自查方法</strong>：从厂门口走到车间，用"新员工第一天上班"的动线走一遍，任何需要穿生产区的环节都是风险点。</p>
+<p><strong>二、平面图：人流、物流、工艺流程要分开画</strong></p>
+<p>审核开场环节之一就是核对厂区平面图。合格的平面图需要体现：
+- 人流（员工从更衣到各工序的路径）
+- 物流（原料进→存储→生产→成品出）
+- 工艺流程（各工序顺序与隔离）</p>
+<p><strong>自查方法</strong>：对照实际走一遍，看图上标的隔离区（拆包区、不合格品区、过敏原隔离）是否真实存在。</p>
+<p><strong>三、追溯体系：4 小时只是及格线</strong></p>
+<p>追溯测试通常要求：
+- 正向：从一批原料追到所有成品去向
+- 反向：从一批成品追回原料批次
+- 时限：一般要求 4 小时内完成</p>
+<p><strong>自查方法</strong>：随机抽一批成品，让质量部当场演练，记录耗时和断点。断点通常出现在"分切/复合"等中间工序的记录衔接上。</p>
+<p><strong>四、食品接触材料合规：包材厂的"产品检测"核心</strong></p>
+<p>这是包材与普通产品最大的区别——你的产品直接接触食品。需要备齐：
+- 迁移测试报告（总迁移、特定迁移）
+- 符合性声明（DoC，依据 EU 10/2011、FDA 21 CFR 或 GB 4806）
+- 原料 COA（每批原料的合格证明）</p>
+<p><strong>自查方法</strong>：列出所有原料与成品清单，逐项核对是否有对应的合规文件，注意有效期。</p>
+<p><strong>五、记录真实性：审核员最敏感的部分</strong></p>
+<p>常见问题：记录缺失后集中补写、日期与生产记录矛盾、同一人签名笔迹不一致。</p>
+<p><strong>自查方法</strong>：随机抽 3 个月的记录做"三角验证"——生产记录、检验记录、仓库进出记录三者对照，看数量与日期是否闭环。</p>
+<p><strong>写在最后</strong>：BRCGS 包材认证的难点不在标准本身，而在"体系是否真的在运行"。如果需要一份完整的自查清单（含 114 项检查点），可以私信我领取。</p>
+    <div class="cta">
+      <img src="/images/wxwork-qr.png" alt="企业微信二维码">
+      <div>
+        <div class="t">需要针对自己工厂的判断？</div>
+        <div class="d">扫码加企业微信，或邮件 liting@renchen-compliance.com<br>可先做一次免费自测：<a href="/assessment/">renchen-compliance.com/assessment/</a></div>
+      </div>
+    </div>
+  </article>
+</main>
+<footer>
+  <div>壬辰合规 RENCHEN CONSULTING · 国际标准体系咨询（BRCGS / IFS / FSSC 22000）</div>
+  <div><a href="/">返回首页</a> · <a href="/news/">更多文章</a> · <a href="/assessment/">免费自测</a></div>
+  <div>© 2026 RenChen Consulting</div>
+</footer>
+
+<script>
+(function(){
+  // 禁选中 / 禁右键 / 禁复制剪切 / 禁常用快捷键 / 禁拖拽
+  document.addEventListener('selectstart', function(e){
+    if(e.target.closest && e.target.closest('.article')) e.preventDefault();
+  });
+  document.addEventListener('contextmenu', function(e){ e.preventDefault(); });
+  document.addEventListener('copy', function(e){
+    e.preventDefault();
+    if(e.clipboardData) e.clipboardData.setData('text/plain','本文来自 renchen-compliance.com，未经授权不得转载。');
+  });
+  document.addEventListener('cut', function(e){ e.preventDefault(); });
+  document.addEventListener('dragstart', function(e){ e.preventDefault(); });
+  document.addEventListener('keydown', function(e){
+    var k=(e.key||'').toLowerCase();
+    if((e.ctrlKey||e.metaKey)&&['c','x','u','s','p','a'].indexOf(k)>-1){ e.preventDefault(); }
+    if(k==='f12'){ e.preventDefault(); }
+  });
+})();
+</script>
+
+</body>
+</html>

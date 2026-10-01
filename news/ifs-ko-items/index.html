@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IFS 认证的 KO 剔除项到底是什么？一票否决的 6 个方向 - 壬辰合规</title>
+<meta name="description" content="IFS 认证里最要命的是 KO（剔除项）—— 命中一条即判定不通过。6 个方向逐条讲清怎么避。">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://renchen-compliance.com/news/ifs-ko-items/">
+<style>
+  :root{ --green:#1a4d3e; --ink:#2b2b2b; --soft:#f7f6f2; --line:#e6e3db; --muted:#777; }
+  *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+  body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+       background:#fff;color:var(--ink);line-height:1.75;}
+  .wrap{max-width:840px;margin:0 auto;padding:0 20px;}
+  a{color:inherit;text-decoration:none}
+  p a,li a,td a{color:var(--green);border-bottom:1px solid rgba(26,77,62,.35)}
+  header{position:sticky;top:0;background:rgba(255,255,255,.95);backdrop-filter:blur(6px);
+         border-bottom:1px solid var(--line);z-index:10;}
+  .nav{display:flex;justify-content:space-between;align-items:center;height:60px;max-width:1080px;margin:0 auto;padding:0 20px;}
+  .brand{font-size:19px;font-weight:700;letter-spacing:1px;color:var(--ink);}
+  .brand small{font-size:12px;color:var(--muted);font-weight:400;margin-left:8px;letter-spacing:2px;}
+  .menu{display:flex;gap:20px;font-size:14px;color:#555;flex-wrap:wrap;}
+  .menu a:hover{color:var(--green);}
+  @font-face{font-family:"RCSerif";src:url("/fonts/NotoSerifSC-Bold.woff2") format("woff2");font-weight:700;font-display:swap}
+  h1,h2,h3,h1 *,h2 *,h3 *{font-family:"RCSerif","Noto Serif SC","Songti SC","SimSun",serif;letter-spacing:.4px}
+  footer{border-top:1px solid var(--line);margin-top:56px;padding:28px 20px;text-align:center;
+         font-size:13px;color:var(--muted);line-height:2;}
+  footer a{color:var(--green)}
+
+  .head{padding:44px 0 22px;border-bottom:1px solid var(--line);}
+  .head .crumb{font-size:13px;color:var(--muted);margin-bottom:14px;}
+  .head h1{font-size:28px;line-height:1.45;}
+  .head .meta{margin-top:14px;font-size:13px;color:var(--muted);display:flex;gap:14px;flex-wrap:wrap;}
+  .head .tag{background:var(--soft);border:1px solid var(--line);border-radius:3px;padding:1px 8px;font-size:12px;color:var(--green);}
+  .article{padding:30px 0 10px;font-size:16.5px;}
+  .article p{margin:0 0 18px;color:#3a3a3a;text-align:justify;}
+  .article h3{font-size:19px;margin:30px 0 14px;color:var(--green);}
+  .article ul,.article ol{margin:0 0 18px 22px;}
+  .article li{margin-bottom:8px;color:#3a3a3a;}
+  .article strong{color:#1f1f1f;}
+  .article hr{border:0;border-top:1px solid var(--line);margin:28px 0;}
+  .article table{width:100%;border-collapse:collapse;margin:0 0 20px;font-size:15px;}
+  .article th,.article td{border:1px solid var(--line);padding:9px 12px;text-align:left;vertical-align:top;}
+  .article th{background:var(--soft);color:var(--green);font-weight:600;white-space:nowrap;}
+  .cta{margin:36px 0 0;padding:22px;background:var(--soft);border:1px solid var(--line);border-radius:4px;
+       display:flex;gap:22px;align-items:center;}
+  .cta img{width:104px;height:104px;background:#fff;padding:4px;border:1px solid var(--line);}
+  .cta .t{font-weight:600;margin-bottom:6px;}
+  .cta .d{font-size:14px;color:#555;line-height:1.9;}
+  .more{display:inline-block;margin-top:26px;color:var(--green);font-weight:600;}
+
+  /* ── 阅读保护（防随手复制/下载；水印用于溯源） ── */
+  .article,.article *{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;
+    -webkit-touch-callout:none;-webkit-user-drag:none}
+  .article img{pointer-events:none;-webkit-user-drag:none;user-drag:none}
+  #wm{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.05;
+      background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22340%22%20height%3D%22150%22%3E%3Ctext%20x%3D%228%22%20y%3D%2286%22%20font-size%3D%2214%22%20fill%3D%22%231a4d3e%22%20font-family%3D%22sans-serif%22%20transform%3D%22rotate%28-22%20170%2075%29%22%3E%E5%A3%AC%E8%BE%B0%E5%90%88%E8%A7%84%20%C2%B7%20renchen-compliance.com%3C/text%3E%3C/svg%3E");background-repeat:repeat}
+  .article{position:relative;z-index:1}
+  @media print{
+    body{background:#fff}
+    #wm{opacity:.16;position:fixed}
+    .article::after{content:"本文来自 renchen-compliance.com，未经授权不得转载或用于商业用途";
+      display:block;margin-top:24px;padding-top:12px;border-top:1px solid #ccc;font-size:12px;color:#888}
+    header,footer,.cta{display:none!important}
+  }
+</style>
+</head>
+<body>
+<div id="wm"></div>
+<header><div class="nav"><a class="brand" href="/">壬辰合规<small>RENCHEN CONSULTING</small></a><nav class="menu">
+      <a href="/">首页</a>
+      <a href="/#services">服务</a>
+      <a href="/assessment/">免费自测</a>
+      <a href="/check/food.html">自查清单</a>
+      <a href="/news/">讯息中心</a>
+      <a href="/#faq">常见问题</a>
+      <a href="/#contact">联系</a>
+    </nav></div></header>
+<main class="wrap">
+  <div class="head">
+    <div class="crumb"><a href="/">首页</a> ／ <a href="/news/">讯息中心</a></div>
+    <h1>IFS 认证的 KO 剔除项到底是什么？一票否决的 6 个方向</h1>
+    <div class="meta"><span>2026-09-30</span><span class="tag">IFS</span><span class="tag">KO</span><span class="tag">审核准备</span></div>
+  </div>
+  <article class="article">
+<p>做 IFS 认证的企业，最终结果有两种失败方式：<strong>分数不够（&lt;75%）</strong>，和<strong>踩了 KO 项</strong>。</p>
+<p>后者更致命——IFS 的评分体系里，KO 项（Knock-Out requirements，剔除项）具有<strong>一票否决权</strong>：只要有一项 KO 被判定不通过，无论其他项表现多好，整体结果为不通过。</p>
+<p><strong>一、KO 项的设计逻辑</strong></p>
+<p>IFS 的审核哲学是：<strong>食品安全有底线，底线不能交易。</strong>
+分数可以商量（比如 80 分和 90 分都是通过），但底线问题不存在"用别的优点弥补"——这是与普通评分项的根本区别。</p>
+<p><strong>二、KO 项集中在哪些方向（IFS Food）</strong></p>
+<table>
+<thead>
+<tr>
+<th>方向</th>
+<th>典型要求</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>管理层责任</strong></td>
+<td>食品安全方针成文并传达、职责与权限明确、管理评审实施</td>
+</tr>
+<tr>
+<td><strong>HACCP 体系</strong></td>
+<td>危害分析完整、CCP 判定合理、监控与纠偏有效运行</td>
+</tr>
+<tr>
+<td><strong>产品合规</strong></td>
+<td>产品规格与配方符合法规、标签合规、食品接触材料安全</td>
+</tr>
+<tr>
+<td><strong>卫生与异物</strong></td>
+<td>虫害管理、异物控制（玻璃/金属/化学品）、清洁消毒程序</td>
+</tr>
+<tr>
+<td><strong>追溯与召回</strong></td>
+<td>可追溯体系（正反向）、召回程序与有效性验证、不合格品控制</td>
+</tr>
+<tr>
+<td><strong>食品防护</strong></td>
+<td>食品防护（Food Defence）、食品欺诈（Food Fraud）评估</td>
+</tr>
+</tbody>
+</table>
+<p><strong>三、实际审核中最容易踩的三条</strong></p>
+<ol>
+<li>
+<p><strong>HACCP 危害分析不完整</strong>
+   表现：只分析生物/化学/物理，漏掉过敏原与欺诈风险；或 CCP 判定缺乏依据。</p>
+</li>
+<li>
+<p><strong>追溯无法闭环</strong>
+   表现：能追到原料，但追溯不到具体批次去向；或追溯耗时过长（超过合理时限）。</p>
+</li>
+<li>
+<p><strong>食品防护/欺诈评估缺失</strong>
+   表现：完全没有做过评估，或评估后无措施、无记录。这两项是近年审核重点。</p>
+</li>
+</ol>
+<p><strong>四、准备建议</strong></p>
+<ol>
+<li><strong>先扫 KO 清单再谈优化</strong>：把上述 6 个方向逐项对照现状，任何空缺优先处理</li>
+<li><strong>模拟审核</strong>：找有 IFS 经验的人做一次预审，重点看 KO 项</li>
+<li><strong>记录先行</strong>：KO 项相关的记录（HACCP 监控、追溯测试、召回演练）都需要运行周期，越早启动越好</li>
+</ol>
+<p><strong>五、通过之后</strong></p>
+<p>IFS 证书有效期与复审规则按版本执行（v8 已生效），复审同样查 KO 项——<strong>不是拿证就一劳永逸</strong>。</p>
+<p><strong>工具</strong>：我们整理了《IFS 食品体系自查清单》（90 项，覆盖场所设施/体系 HACCP/记录/流程/计量/检测 6 大模块），工厂可先自查定位差距。</p>
+    <div class="cta">
+      <img src="/images/wxwork-qr.png" alt="企业微信二维码">
+      <div>
+        <div class="t">需要针对自己工厂的判断？</div>
+        <div class="d">扫码加企业微信，或邮件 liting@renchen-compliance.com<br>可先做一次免费自测：<a href="/assessment/">renchen-compliance.com/assessment/</a></div>
+      </div>
+    </div>
+  </article>
+</main>
+<footer>
+  <div>壬辰合规 RENCHEN CONSULTING · 国际标准体系咨询（BRCGS / IFS / FSSC 22000）</div>
+  <div><a href="/">返回首页</a> · <a href="/news/">更多文章</a> · <a href="/assessment/">免费自测</a></div>
+  <div>© 2026 RenChen Consulting</div>
+</footer>
+
+<script>
+(function(){
+  // 禁选中 / 禁右键 / 禁复制剪切 / 禁常用快捷键 / 禁拖拽
+  document.addEventListener('selectstart', function(e){
+    if(e.target.closest && e.target.closest('.article')) e.preventDefault();
+  });
+  document.addEventListener('contextmenu', function(e){ e.preventDefault(); });
+  document.addEventListener('copy', function(e){
+    e.preventDefault();
+    if(e.clipboardData) e.clipboardData.setData('text/plain','本文来自 renchen-compliance.com，未经授权不得转载。');
+  });
+  document.addEventListener('cut', function(e){ e.preventDefault(); });
+  document.addEventListener('dragstart', function(e){ e.preventDefault(); });
+  document.addEventListener('keydown', function(e){
+    var k=(e.key||'').toLowerCase();
+    if((e.ctrlKey||e.metaKey)&&['c','x','u','s','p','a'].indexOf(k)>-1){ e.preventDefault(); }
+    if(k==='f12'){ e.preventDefault(); }
+  });
+})();
+</script>
+
+</body>
+</html>
